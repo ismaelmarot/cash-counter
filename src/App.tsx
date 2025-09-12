@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import BillInput from './components/BillInput';
+import BillInput from './components/BillInput/BillInput';
 import { denominations } from './constants/denominations';
+import { ContainerStyled, DivStyled, H2 } from './App.styled';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''));
@@ -13,19 +14,20 @@ function App() {
   };
 
   return (
-    <Container  style={{backgroundColor:'rgb(255,211,8)', borderRadius:'5px', padding:'2rem .5rem', border:'8px solid rgb(51,51,51)'}}>
-      <h2 className='mb-4 text-center' style={{fontSize:'2rem'}}>Cash Counter</h2>
-      <div>
+    <ContainerStyled>
+      <H2>Cash Counter</H2>
+      <DivStyled>
         {denominations.map((denom, i) => (
             <BillInput
               key={denom}
               denomination={denom}
               quantity={quantities[i]}
-              onChange={(value) => handleChange(i, value)}
+              onChange={(value: string) => handleChange(i, value)}
             />
         ))}
-      </div>
-    </Container>
+      </DivStyled>
+      <Footer />
+    </ContainerStyled>
   );
 }
 
