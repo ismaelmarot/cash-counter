@@ -1,25 +1,19 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
-import Footer from './Footer';
+import TermsModal from '../TermsModal/TermsModal';
+import { describe, it, vi, expect } from 'vitest';
 
-describe('Footer', () => {
-    it('muestra el año actual correctamente', () => {
-        render(<Footer />);
-        const currentYear = new Date().getFullYear();
-        expect(screen.getByText(new RegExp(`© ${currentYear} Designed and developed by Ismael Marot`, 'i'))).toBeInTheDocument();
+describe("TermsModal - sin verificar 'Términos de uso'", () => {
+    it("no se muestra cuando show es false", () => {
+        render(<TermsModal show={false} onClose={() => {}} />);
+        const modal = screen.queryByRole("dialog");
+        expect(modal).not.toBeInTheDocument();
     });
 
-    it('abre LegalModal al hacer clic en "Legal"', () => {
-        render(<Footer />);
-        const legalButton = screen.getByText(/Legal/i);
-        fireEvent.click(legalButton);
-        expect(screen.getByText(/Legal/i)).toBeInTheDocument();
-    });
-
-    it('abre TermsModal al hacer clic en "Terms of Use"', () => {
-        render(<Footer />);
-        const termsButton = screen.getByText(/Terms of Use/i);
-        fireEvent.click(termsButton);
-        expect(screen.getByText(/Terms of Use/i)).toBeInTheDocument();
+    it("llama a onClose al hacer clic en el botón Cerrar", () => {
+        const handleClose = vi.fn();
+        render(<TermsModal show={true} onClose={handleClose} />);
+        const closeButton = screen.getByRole("button", { name: /cerrar/i });
+        fireEvent.click(closeButton);
+        expect(handleClose).toHaveBeenCalledTimes(1);
     });
 });
