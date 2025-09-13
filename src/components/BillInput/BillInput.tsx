@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { Form, Card } from 'react-bootstrap';
-import type { BillInputProps } from '../interface/BillInput.interface';
+import type { BillInputProps } from '../../interface/BillInput.interface';
 
 const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
     return (

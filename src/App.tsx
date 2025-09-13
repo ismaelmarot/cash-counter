@@ -3,6 +3,7 @@ import BillInput from './components/BillInput/BillInput';
 import { denominations } from './constants/denominations';
 import { ContainerStyled, DivStyled, H2 } from './App.styled';
 import Footer from './components/Footer/Footer';
+import Totals from './components/Totals/Totals';
 
 function App() {
   const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''));
@@ -26,6 +27,7 @@ function App() {
             />
         ))}
       </DivStyled>
+      <Totals quantities={quantities} denominations={denominations} />
       <Footer />
     </ContainerStyled>
   );
