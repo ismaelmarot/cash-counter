@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# Cash Counter 💵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="https://ismaelmarot.github.io/cash-counter">
+    <img 
+      src="https://img.shields.io/badge/🚀%20Ir%20a%20la%20aplicación-blue?style=for-the-badge&logoWidth=30" 
+      alt="Ir a la aplicación"
+    >
+  </a>
+</p>
 
-Currently, two official plugins are available:
+Cash Counter is a web application for counting bills and calculating total cash quickly and easily. Built with **React**, **TypeScript**, and **Vite**, it can be deployed effortlessly on **GitHub Pages**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Try the live app here:  
+[https://ismaelmarot.github.io/cash-counter](https://ismaelmarot.github.io/cash-counter)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Count bills by denomination.
+- Automatic calculation of the total amount.
+- Simple and responsive design.
+- Unit tests with **Vitest**.
+- Easy deployment to **GitHub Pages**.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technologies
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React + TypeScript
+- Vite (bundler)
+- Styled Components
+- Vitest (testing)
+- GitHub Pages (hosting)
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ismaelmarot/cash-counter.git
+cd cash-counter
