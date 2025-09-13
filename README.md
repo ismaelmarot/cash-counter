@@ -98,11 +98,9 @@ product-entry-app/
 Make sure Node.js version is compatible (>=18.12)
 
 ---
-### 📝 Notes
-
-Make sure Node.js version is compatible (>=18.12)
-
----
 ### 📷 Screenshots
+
+<img src="src/screenshots/screenshot01.png" alt="Captura 1" />
+<img src="src/screenshots/screenshot02.png" alt="Captura 2" />
 
 
