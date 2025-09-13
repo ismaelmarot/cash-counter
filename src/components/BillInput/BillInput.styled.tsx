@@ -19,7 +19,19 @@ export const FormGroupStyled = styled(Form.Group)`
     justify-content: space-between;
 `;
 
+export const FormControl = styled(Form.Control)`
+    max-width: 150px;
+    text-align: right;
+    font-size: 1.5rem;
+`
+
 export const SpanStyled = styled.span`
-     font-size: 1.2rem;
-     font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
+`;
+
+export const SpanX = styled.span`
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 10px;
 `;

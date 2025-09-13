@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import BillInput from './components/BillInput/BillInput';
 import { denominations } from './constants/denominations';
-import { ContainerStyled, DivStyled, H2 } from './App.styled';
+import BillInput from './components/BillInput/BillInput';
 import Footer from './components/Footer/Footer';
 import Totals from './components/Totals/Totals';
+import { ContainerStyled, DivStyled, H2 } from './App.styled';
 
 function App() {
   const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''));
