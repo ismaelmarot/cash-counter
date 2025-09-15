@@ -2,7 +2,7 @@
   "name": "cash-counter",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "homepage": "https://ismaelmarot.github.io/cash-counter",
   "scripts": {
     "dev": "vite",

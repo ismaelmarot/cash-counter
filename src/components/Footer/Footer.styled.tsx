@@ -9,7 +9,7 @@ export const Button = styled.button`
     color: rgb(51,51,51);
 `;
 
-export const Span = styled.samp`
+export const Span = styled.span`
     color: rgb(51,51,51);
     font-weight: bolder;
 `;
