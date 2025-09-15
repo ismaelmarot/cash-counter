@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import type { BillInputProps } from '../../interface/BillInput.interface';
-import { CardBodyStyled, CardStyled, FormControl, FormGroupStyled, SpanStyled, SpanX } from './BillInput.styled';
+import { BillInputProps } from '../../interface/BillInput.interface.js';
+import { CardBodyStyled, CardStyled, FormControl, FormGroupStyled, SpanStyled, SpanX } from './BillInput.styled.js';
 
 const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
     return (
@@ -19,7 +19,7 @@ const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => 
                         min={0}
                         value={quantity}
                         placeholder=''
-                        onChange={(e) => onChange(e.target.value)}
+                        onChange={(e: { target: { value: string; }; }) => onChange(e.target.value)}
                     />
                 </FormGroupStyled>
             </CardBodyStyled>
