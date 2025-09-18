@@ -4,9 +4,12 @@ import { Card } from 'react-bootstrap';
 export const CardStyled = styled(Card)`
     margin: 0 1rem 2rem;
     padding: 1rem;
-    border-radius: 8px;
-    color: white;
-    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(8px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 `;
 
 export const H3 = styled.h3`

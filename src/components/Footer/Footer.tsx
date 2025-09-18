@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { getCurrentYear } from '../../helpers/getCurrentYear';
 import LegalModal from '../../components/LegalModal/LegalModal';
 import TermsModal from '../../components/TermsModal/TermsModal';
-import { Button, FooterStyled, Span } from './Footer.styled';
+import { Button, FooterStyled, Span, DivDesigned } from './Footer.styled';
 
 const Footer: React.FC = () => {
     const [showLegal, setShowLegal] = useState(false);
@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
         <>
         <FooterStyled>
             <div className='row align-items-center text-center text-md-start'>
-                <div className='col-md-8'>
+                <DivDesigned className='col-md-8'>
                     <p className='mb-0'>
                     © {getCurrentYear()} Designed and developed by Ismael Marot. All rights reserved.
                     </p>
-                </div>
+                </DivDesigned>
                 <div className='col-md-4'>
                     <nav className='d-flex justify-content-center justify-content-md-end align-items-center'>
                         <Button 
