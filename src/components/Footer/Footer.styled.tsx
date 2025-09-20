@@ -6,14 +6,14 @@ export const FooterStyled = styled.footer`
     font-size: .8rem;
 `
 export const Button = styled.button`
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 `;
 
 export const Span = styled.span`
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: bolder;
 `;
 
 export const DivDesigned = styled.div`
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 `;

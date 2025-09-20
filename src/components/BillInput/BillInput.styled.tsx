@@ -5,7 +5,7 @@ export const CardStyled = styled(BootstrapCard)`
     width: 100%;
     border-radius: 5px;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #000000;
 
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);

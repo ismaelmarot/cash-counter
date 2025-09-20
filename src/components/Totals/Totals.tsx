@@ -11,7 +11,7 @@ const Totals: FC<TotalsProps> = ({ quantities, denominations }) => {
     return (
         <CardStyled>
             <H3> 
-                <span>Total $:</span> 
+                <span>Total</span> 
                 {total.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </H3>
         </CardStyled>
