@@ -2,9 +2,8 @@ import { useState, useRef } from 'react';
 import { denominations } from './constants/denominations';
 import BillInput from './components/BillInput/BillInput';
 import Footer from './components/Footer/Footer';
-import Totals from './components/Totals/Totals';
-import { ContainerStyled, H2 } from './App.styled';
-import { CardsContainer, Card, ArrowButton } from './App.styled';
+import Total from './components/Total/Total';
+import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from './App.styled';
 
 function App() {
   const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''));
@@ -16,7 +15,6 @@ function App() {
     setQuantities(newQuantities);
   };
 
-  // Mover el scroll con las flechas
   const scroll = (direction: 'left' | 'right') => {
     if (containerRef.current) {
       const width = containerRef.current.clientWidth;
@@ -28,27 +26,30 @@ function App() {
   };
 
   return (
-    <ContainerStyled>
-      <H2>Cash Counter</H2>
+    <AppContainer>
+      <div>
+        <Title>Cash Counter</Title>
+        <Total quantities={quantities} denominations={denominations} />
 
-      <ArrowButton left onClick={() => scroll('left')}>◀</ArrowButton>
-      <ArrowButton onClick={() => scroll('right')}>▶</ArrowButton>
+        <ArrowButton left onClick={() => scroll('left')}>◀</ArrowButton>
+        <ArrowButton onClick={() => scroll('right')}>▶</ArrowButton>
 
-      <CardsContainer ref={containerRef}>
-        {denominations.map((denom, i) => (
-          <Card key={denom}>
-            <BillInput
-              denomination={denom}
-              quantity={quantities[i]}
-              onChange={(value: string) => handleChange(i, value)}
-            />
-          </Card>
-        ))}
-      </CardsContainer>
+        <CardCashCounterContainer ref={containerRef}>
+          {denominations.map((denom, i) => (
+            <Card key={denom}>
+              <BillInput
+                denomination={denom}
+                quantity={quantities[i]}
+                onChange={(value: string) => handleChange(i, value)}
+              />
+            </Card>
+          ))}
+        </CardCashCounterContainer>
 
-      <Totals quantities={quantities} denominations={denominations} />
+
+      </div>
       <Footer />
-    </ContainerStyled>
+    </AppContainer>
   );
 }
 

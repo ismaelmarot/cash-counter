@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
-    margin: 0 1rem;
-    border-top: 1px solid rgb(255, 255, 255);;
+    margin: 2rem .5rem .5rem;
+    border-top: 2px solid rgb(0, 0, 0);;
     font-size: .8rem;
 `
 export const Button = styled.button`
