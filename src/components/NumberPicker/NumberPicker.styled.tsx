@@ -15,9 +15,9 @@ export const PopupOverlay = styled.div`
 
 export const PopupContent = styled.div`
     background: #fff;
-    width: 80%;
+    width: 90%;
     max-width: 300px;
-    max-height: 70%;
+    max-height: 90%;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -29,15 +29,14 @@ export const CloseButton = styled.button`
     align-self: flex-end;
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 2rem;
     cursor: pointer;
     padding: 0.5rem;
 `;
 
 export const ZeroFixed = styled.div`
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 3rem;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
     background: #fafafa;
@@ -58,7 +57,7 @@ export const NumberList = styled.div`
 export const NumberItem = styled.div`
     padding: 1rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 3rem;
     scroll-snap-align: center;
     cursor: pointer;
 
