@@ -19,7 +19,8 @@ export const TotalSpan = styled.span`
 
 export const TotalNumber = styled.span`
     font-size: 3rem;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: rgb(131,227,100)
 `;
 
 export const IntegerPart = styled.span`

@@ -21,7 +21,7 @@ export const DivStyled = styled.div`
 export const CardCashCounterContainer = styled.div`
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 80vh;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;

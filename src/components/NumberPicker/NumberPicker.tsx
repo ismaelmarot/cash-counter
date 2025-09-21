@@ -1,26 +1,19 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { CloseButton, NumberItem, NumberList, PopupContent, PopupOverlay, ZeroFixed } from './NumberPicker.styled';
-
-interface NumberPickerProps {
-  value: string;
-  onChange: (value: string) => void;
-}
+import { CloseButton, NumberItem, NumberList, PopupContent, PopupOverlay, SelectedNumber, ZeroFixed } from './NumberPicker.styled';
+import { NumberPickerProps } from '../../interface/NumberPicker.interface';
 
 const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
   const [open, setOpen] = useState(false);
 
-  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1); // 1 → 1000
+  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
 
   return (
     <>
       {/* Trigger */}
-      <span
-        style={{ cursor: 'pointer', fontWeight: 'bold' }}
-        onClick={() => setOpen(true)}
-      >
+      <SelectedNumber onClick={() => setOpen(true)}>
         {value || '0'}
-      </span>
+      </SelectedNumber>
 
       {open && (
         <PopupOverlay>
@@ -35,7 +28,7 @@ const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
               0
             </ZeroFixed>
 
-            {/* Lista scrolleable */}
+            {/* Scrolleable List */}
             <NumberList>
               {numbers.map((num) => (
                 <NumberItem

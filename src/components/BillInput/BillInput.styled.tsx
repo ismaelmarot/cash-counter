@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import { Card as BootstrapCard, Card, Form } from 'react-bootstrap';
 
 export const CardInput = styled(BootstrapCard)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
-    height: 95%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 90%;
     border-radius: .8rem;
-    color: #000000;
+    background-color: rgba(0, 0, 0, 1);
     backdrop-filter: blur(12px) saturate(150%);
     -webkit-backdrop-filter: blur(12px) saturate(150%);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -18,35 +20,29 @@ export const CardInput = styled(BootstrapCard)`
     }
 `;
 
-export const FormGroupStyled = styled(Form.Group)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-`;
-
 export const AmountTipe = styled.div`
-    margin: 3rem;
+    width: 95%;
     padding: .3rem 1rem;
-    border-radius: .5rem;
-    background-color: rgba(90, 90, 102, 1);
     color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
 `;
 
-export const FormControl = styled(Form.Control)`
-    max-width: 150px;
-    text-align: right;
-    font-size: 2rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-`
 
 export const SpanX = styled.span`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: .5rem;
 `;
 
 export const SpanStyled = styled.span`
     font-size: 1.8rem;
     font-weight: bold;
+`;
+
+export const AmountTotal = styled.div`
+    width: 95%;
+    padding: .3rem 1rem;
+    text-align: right;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    color: #ffffff;
 `;

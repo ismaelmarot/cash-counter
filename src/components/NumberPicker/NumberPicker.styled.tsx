@@ -62,7 +62,19 @@ export const NumberItem = styled.div`
     scroll-snap-align: center;
     cursor: pointer;
 
+
     &:hover {
         background: #f0f0f0;
     }
+`;
+
+export const SelectedNumber = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 `;
