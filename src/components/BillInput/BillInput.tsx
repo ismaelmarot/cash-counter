@@ -1,6 +1,15 @@
 import type { FC } from 'react';
 import { BillInputProps } from '../../interface/BillInput.interface.js';
-import { CardInput, Denomination, SpanX, AmountTipe, AmountTotal, PriceSimbol } from './BillInput.styled.js';
+import { 
+    CardInput, 
+    Denomination, 
+    SpanX, 
+    AmountTipe, 
+    AmountTotal, 
+    PriceSimbol, 
+    IntegerPart, 
+    DecimalPart 
+} from './BillInput.styled.js';
 import NumberPicker from '../NumberPicker/NumberPicker';
 
 const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
@@ -9,8 +18,14 @@ const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => 
         ? denomination.toLocaleString('es-AR', { minimumFractionDigits: 0 })
         : denomination.toLocaleString('es-AR', { minimumFractionDigits: 2 });
 
-    const subtotal =
-        (Number(quantity) || 0) * denomination;
+    const subtotal = (Number(quantity) || 0) * denomination;
+
+    const formattedSubtotal = subtotal.toLocaleString('es-AR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    });
+
+    const [integerPart, decimalPart] = formattedSubtotal.split(',');
 
     return (
         <CardInput>
@@ -22,8 +37,9 @@ const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => 
             <NumberPicker value={quantity} onChange={onChange} />
             
             <AmountTotal>
-                <PriceSimbol> $ </PriceSimbol>
-                {subtotal.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                <PriceSimbol>$</PriceSimbol>
+                <IntegerPart>{integerPart}</IntegerPart>
+                <DecimalPart>,{decimalPart}</DecimalPart>
             </AmountTotal>
         </CardInput>
     );

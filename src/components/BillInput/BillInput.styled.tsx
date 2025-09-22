@@ -46,6 +46,17 @@ export const AmountTotal = styled.div`
 `;
 
 export const PriceSimbol = styled.span`
+    padding-right: .5rem;
     font-size: 1.5rem;
     color: rgb(128, 128, 128);
+`;
+
+export const IntegerPart = styled.span`
+  font-size: 2rem;
+  font-weight: bold;
+`;
+
+export const DecimalPart = styled.span`
+  font-size: 1.5rem;
+  color: rgb(128, 128, 128);
 `;
