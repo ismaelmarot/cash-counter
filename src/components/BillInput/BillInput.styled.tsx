@@ -23,19 +23,17 @@ export const CardInput = styled(BootstrapCard)`
 export const AmountTipe = styled.div`
     width: 95%;
     padding: .3rem 1rem;
-    color: #ffffff;
+    color: grey;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
 `;
-
 
 export const SpanX = styled.span`
     font-size: 1.2rem;
     margin-right: .5rem;
 `;
 
-export const SpanStyled = styled.span`
+export const Denomination = styled.span`
     font-size: 1.8rem;
-    font-weight: bold;
 `;
 
 export const AmountTotal = styled.div`
@@ -44,5 +42,10 @@ export const AmountTotal = styled.div`
     text-align: right;
     border-top: 1px solid rgba(255, 255, 255, 1);
     font-size: 2rem;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+`;
+
+export const PriceSimbol = styled.span`
+    font-size: 1.5rem;
+    color: rgb(128, 128, 128);
 `;

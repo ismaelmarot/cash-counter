@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { BillInputProps } from '../../interface/BillInput.interface.js';
-import { CardInput, SpanStyled, SpanX, AmountTipe, AmountTotal } from './BillInput.styled.js';
+import { CardInput, Denomination, SpanX, AmountTipe, AmountTotal, PriceSimbol } from './BillInput.styled.js';
 import NumberPicker from '../NumberPicker/NumberPicker';
 
 const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
@@ -16,14 +16,14 @@ const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => 
         <CardInput>
             <AmountTipe>
                 <SpanX>x</SpanX>
-                <SpanStyled>{formattedDenomination}</SpanStyled>
+                <Denomination>{formattedDenomination}</Denomination>
             </AmountTipe>
 
             <NumberPicker value={quantity} onChange={onChange} />
             
-
             <AmountTotal>
-                $ {subtotal.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                <PriceSimbol> $ </PriceSimbol>
+                {subtotal.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </AmountTotal>
         </CardInput>
     );
