@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react';
-import { toJpeg } from 'html-to-image';
 import { denominations } from './constants/denominations';
 import BillInput from './components/BillInput/BillInput';
 import Footer from './components/Footer/Footer';
@@ -10,7 +9,6 @@ import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from
 function App() {
   const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''));
   const containerRef = useRef<HTMLDivElement>(null);
-  const summaryRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (index: number, value: string) => {
     const newQuantities = [...quantities];
@@ -28,22 +26,12 @@ function App() {
     }
   };
 
-  const handleDownload = async () => {
-    if (summaryRef.current) {
-      const dataUrl = await toJpeg(summaryRef.current, { quality: 0.95 });
-      const link = document.createElement('a');
-      link.download = 'resumen.jpg';
-      link.href = dataUrl;
-      link.click();
-    }
-  };
-
   return (
     <AppContainer>
       <div>
         <Title>Cash Counter</Title>
         <Total quantities={quantities} denominations={denominations} />
-
+        
         <ArrowButton left onClick={() => scroll('left')}>◀</ArrowButton>
         <ArrowButton onClick={() => scroll('right')}>▶</ArrowButton>
 
@@ -57,11 +45,8 @@ function App() {
               />
             </Card>
           ))}
-
           <SummaryCard
-            ref={summaryRef}
             quantities={quantities}
-            onDownload={handleDownload}
           />
         </CardCashCounterContainer>
       </div>
