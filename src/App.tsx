@@ -32,7 +32,7 @@ function App() {
         <Title>Cash Counter</Title>
         <Total quantities={quantities} denominations={denominations} />
         
-        <ArrowButton left onClick={() => scroll('left')}>◀</ArrowButton>
+        <ArrowButton $left onClick={() => scroll('left')}>◀</ArrowButton>
         <ArrowButton onClick={() => scroll('right')}>▶</ArrowButton>
 
         <CardCashCounterContainer ref={containerRef}>

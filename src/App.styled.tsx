@@ -39,10 +39,13 @@ export const Card = styled.div`
   scroll-snap-align: start;
 `;
 
-export const ArrowButton = styled.button<{ left?: boolean }>`
+/**
+ * Usamos $left para que no se pase al DOM
+ */
+export const ArrowButton = styled.button<{ $left?: boolean }>`
   position: absolute;
   top: 50%;
-  ${({ left }) => (left ? 'left: 10px;' : 'right: 10px;')}
+  ${({ $left }) => ($left ? 'left: 10px;' : 'right: 10px;')}
   transform: translateY(-50%);
   z-index: 10;
   background: rgba(0,0,0,0.5);
