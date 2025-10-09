@@ -1,0 +1,5 @@
+{
+  "title": "Cash Counter",
+  "description": "App para contar dinero fácilmente.",
+  "technologies": ["React", "Vite", "TypeScript"]
+}
