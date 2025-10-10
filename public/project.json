@@ -1,5 +1,6 @@
 {
   "title": "Cash Counter",
-  "description": "App para contar dinero fácilmente.",
+  "short_description": "App for counting bills quicky and easily.",
+  "long_description": "Cash Counter is a web application for counting bills and calculating total cash quickly and easily. Built with React, TypeScript, and Vite, it can be deployed effortlessly on GitHub Pages.",
   "technologies": ["React", "Vite", "TypeScript"]
 }
