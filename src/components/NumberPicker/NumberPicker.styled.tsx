@@ -1,27 +1,31 @@
 import { styled } from 'styled-components';
+import { flex } from '../../mixins/setFlex';
+import { size } from '../../mixins/setSize';
+import { sizeMax } from '../../mixins/setSizeMax';
+import { Colors } from '../../constants/colors';
+import { Col } from 'react-bootstrap';
 
 export const PopupOverlay = styled.div`
+    ${flex('column', 'center', 'center')}
+    ${size('100%', '100%')}
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: ${Colors.lightBlack};
     z-index: 2000;
 `;
 
 export const PopupContent = styled.div`
-    background: #fff;
+    ${flex('column', 'center', 'center')}
+    ${sizeMax('400px', '90%')}
+    background: ${Colors.white};
     width: 90%;
-    max-width: 300px;
-    max-height: 90%;
+    /* max-width: 300px;
+    max-height: 90%; */
     border-radius: 12px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     position: relative;
 `;
 
@@ -35,19 +39,21 @@ export const CloseButton = styled.button`
 `;
 
 export const ZeroFixed = styled.div`
+    width: 90%;
+    padding: 1rem;
     text-align: center;
     font-size: 3rem;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-    background: #fafafa;
+    border-bottom: 1px solid ${Colors.lightGrey};
+    background: ${Colors.white};
     cursor: pointer;
 
     &:hover {
-        background: #f0f0f0;
+        background: ${Colors.lightGreytWhite};
     }
 `;
 
 export const NumberList = styled.div`
+    width: 90%;
     flex: 1;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -61,19 +67,16 @@ export const NumberItem = styled.div`
     scroll-snap-align: center;
     cursor: pointer;
 
-
     &:hover {
-        background: #f0f0f0;
+        background: ${Colors.lightGreytWhite}
     }
 `;
 
 export const SelectedNumber = styled.span`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    ${flex('column', 'center', 'center')}
     height: 60vh;
     font-size: 10rem;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: ${Colors.white};
     cursor: pointer;
 `;
