@@ -3,7 +3,6 @@ import { flex } from '../../mixins/setFlex';
 import { size } from '../../mixins/setSize';
 import { sizeMax } from '../../mixins/setSizeMax';
 import { Colors } from '../../constants/colors';
-import { Col } from 'react-bootstrap';
 
 export const PopupOverlay = styled.div`
     ${flex('column', 'center', 'center')}
@@ -20,12 +19,8 @@ export const PopupContent = styled.div`
     ${sizeMax('400px', '90%')}
     background: ${Colors.white};
     width: 90%;
-    /* max-width: 300px;
-    max-height: 90%; */
     border-radius: 12px;
     overflow: hidden;
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
 `;
 
