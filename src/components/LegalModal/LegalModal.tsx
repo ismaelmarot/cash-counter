@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { getCurrentYear } from '../../helpers/getCurrentYear';
 import type { LegalModalProps } from '../../interface/LegalModal.interface';
-import { ModalBodyStyled } from './LegalModal.styled';
+import { ModalBodyStyled, StyledLink } from './LegalModal.styled';
 
 const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
     return (
@@ -20,11 +20,11 @@ const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
                 <p>Responsable: <span>Ismael Marot</span></p>
                 <p>Dirección: La Plata, Buenos Aires, Argentina</p>
                 <p>Correo electrónico:
-                    <a href='mailto:ismaelmarot@hotmail.com' style={{textDecoration:'none'}}> ismaelmarot@hotmail.com</a>
+                    <StyledLink href='mailto:ismaelmarot@hotmail.com'> ismaelmarot@hotmail.com</StyledLink>
                 </p>
 
                 <p>Sitio web:
-                     <a href='https://ismaelmarot.github.io' style={{textDecoration:'none'}}> www.ismaelmarot.github.io</a>
+                     <StyledLink href='https://ismaelmarot.github.io'> www.ismaelmarot.github.io</StyledLink>
                 </p>
                 <p>Licencia del código:
                     El código de este <i>Sitio/Aplicación</i> y de los proyectos que contiene se distribuye bajo la <span style={{fontWeight:'bold'}}>licencia MIT</span>. Esto permite su uso, copia, modificación y distribución siempre que se mantenga la atribución correspondiente.
