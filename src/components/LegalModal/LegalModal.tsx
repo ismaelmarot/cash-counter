@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { getCurrentYear } from '../../helpers/getCurrentYear';
 import type { LegalModalProps } from '../../interface/LegalModal.interface';
+import { ModalBodyStyled } from './LegalModal.styled';
 
 const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
     return (
@@ -9,7 +10,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
             <Modal.Header closeButton>
                 <Modal.Title>Legal</Modal.Title>
             </Modal.Header>
-            <Modal.Body style={{ fontSize:'.7rem', textAlign:'justify' }}>
+            <ModalBodyStyled>
                 <p>
                 Este sitio y la aplicación de carga de productos son proporcionados 
                 “tal cual”, sin garantías explícitas ni implícitas, incluyendo pero 
@@ -40,7 +41,7 @@ const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
 
                 <p>Última actualización: {getCurrentYear()}</p> 
 
-            </Modal.Body>
+            </ModalBodyStyled>
             <Modal.Footer>
                 <Button variant='secondary' onClick={onClose}>Cerrar</Button>
             </Modal.Footer>
