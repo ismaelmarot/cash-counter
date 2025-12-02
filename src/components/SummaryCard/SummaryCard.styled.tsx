@@ -1,54 +1,54 @@
 import styled from 'styled-components';
 import { Card } from '../../App.styled';
+import { flex } from '../../mixins/setFlex';
+import { size } from '../../mixins/setSize';
+import { Colors } from '../../constants/colors';
+import { Col } from 'react-bootstrap';
+import { C } from 'vitest/dist/chunks/reporters.d.BFLkQcL6.js';
 
 export const CardStyled = styled(Card)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    ${flex('column', 'center', 'center')};
 `;
 
 export const ResumeContainer = styled.div`
-    width: 95vw;
-    height: 72vh;
+    ${size('95vw', '72vh')};
     padding: 1rem;
     border-radius: 1rem;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: ${Colors.white};
+    background-color: ${Colors.black};
 
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: rgb(136, 136, 136) rgb(34, 34, 34);
+    scrollbar-color: ${Colors.grey} ${Colors.lightBlack};
 
     &::-webkit-scrollbar {
         width: 8px;
     }
 
     &::-webkit-scrollbar-track {
-        background: rgb(34, 34, 34);
+        background: ${Colors.lightBlack};
         border-radius: 4px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: rgb(136, 136, 136);
+        background-color: ${Colors.grey};
         border-radius: 4px;
     }
 `;
 
 export const H3 = styled.h3`
     padding-bottom: .7rem;
-    color: rgb(128, 128, 128);
-    border-bottom: 2px solid rgb(128, 128, 128);
+    color: ${Colors.grey};
+    border-bottom: 2px solid ${Colors.grey};
 `;
 
 export const Amount = styled.span`
-    display: flex;
-    align-items: center;
+    ${flex('row', 'center', 'center')};
     font-size: 1.5rem
 `;
 
 export const Quantity = styled.span`
-    color: rgb(255, 255, 255);
+    color: ${Colors.white};
     font-size: 2rem;
 `;
 
