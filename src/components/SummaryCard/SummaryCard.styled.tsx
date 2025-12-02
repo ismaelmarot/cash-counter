@@ -3,8 +3,6 @@ import { Card } from '../../App.styled';
 import { flex } from '../../mixins/setFlex';
 import { size } from '../../mixins/setSize';
 import { Colors } from '../../constants/colors';
-import { Col } from 'react-bootstrap';
-import { C } from 'vitest/dist/chunks/reporters.d.BFLkQcL6.js';
 
 export const CardStyled = styled(Card)`
     ${flex('column', 'center', 'center')};
@@ -53,20 +51,18 @@ export const Quantity = styled.span`
 `;
 
 export const NumberStyled = styled.div`
-    display: flex;
-    justify-content: space-between;
+    ${flex('row', 'center','space-between')};
 `;
 
 export const ButtonStyled = styled.button`
     border-radius: 5px;
     padding: .5rem 1rem;
-    color: rgb(2, 0, 0);
-    background-color: rgb(131,227,99);
+    color: ${Colors.black};
+    background-color: ${Colors.green};
 `;
 
 export const ButtonContainer = styled.div`
-    display: flex;
-    justify-content: center;
+    ${flex('row', 'center', 'center')};
     margin-top: 2rem;
     font-weight: bold;
 `;
@@ -78,10 +74,10 @@ export const Total = styled.div`
 
 export const IntegerPart = styled.span`
     font-size: 3rem;
-    color: rgb(131,227,99);
+    color: ${Colors.green};
 `;
 
 export const DecimalPart = styled.span`
     font-size: 2rem;
-    color: rgb(128, 128, 128);
+    color: ${Colors.grey};
 `;
