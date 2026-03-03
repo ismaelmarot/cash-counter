@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { flex } from './mixins/setFlex'
-import { size } from './mixins/setSize'
+import { flex, size } from './mixins'
 
 export const AppContainer = styled.div`
   background-color: rgb(255,255,255);

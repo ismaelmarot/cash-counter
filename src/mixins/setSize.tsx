@@ -1,4 +1,4 @@
-import type { SizeValue } from '../types/sizeValue.type';
+import type { SizeValue } from '../types/sizeValue.type'
 
 export function formatSize(value: SizeValue): string {
     if (typeof value === 'number') {

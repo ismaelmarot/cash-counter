@@ -1,4 +1,8 @@
-import type { AlignItems, FlexDirection, JustifyContent } from '../types/flexValue.type';
+import type {
+    AlignItems,
+    FlexDirection,
+    JustifyContent
+} from '../types/flexValue.type'
 
 export const flex = (
     direction: FlexDirection = 'row',
@@ -9,4 +13,4 @@ export const flex = (
     flex-direction: ${direction};
     align-items: ${align};
     justify-content: ${justify};
-`;
+`
