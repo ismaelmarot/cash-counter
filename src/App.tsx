@@ -1,7 +1,18 @@
 import { useState, useRef } from 'react'
 import { DENOMINATIONS } from './constants'
-import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from './App.styled'
-import { BillInput, Footer, SummaryCard, Total } from './components'
+import {
+  BillInput,
+  Footer,
+  SummaryCard,
+  Total
+} from './components'
+import {
+  AppContainer,
+  ArrowButton,
+  Card,
+  CardCashCounterContainer,
+  Title,
+} from './App.styled'
 
 function App() {
   const [quantities, setQuantities] = useState<string[]>(DENOMINATIONS.map(() => ''))

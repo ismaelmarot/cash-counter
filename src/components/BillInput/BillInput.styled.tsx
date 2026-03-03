@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import { Card as BootstrapCard } from 'react-bootstrap'
 import { COLORS } from '../../constants'
-import { flex } from '../../mixins/setFlex'
-import { size } from '../../mixins/setSize'
+import { flex, size } from '../../mixins'
 
 export const CardInput = styled(BootstrapCard)`
     ${flex('column', 'center','center')}

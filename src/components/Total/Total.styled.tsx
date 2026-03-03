@@ -1,5 +1,6 @@
-import styled from 'styled-components';
-import { Card } from 'react-bootstrap';
+import styled from 'styled-components'
+import { Card } from 'react-bootstrap'
+import { COLORS } from '../../constants';
 
 export const TotalContainer = styled(Card)`
   display: flex;
@@ -8,29 +9,29 @@ export const TotalContainer = styled(Card)`
   align-items: flex-end;
   padding: .2rem;
   border-radius: 0;
-  background-color: rgba(0, 0, 0, 1);
-`;
+  background-color: ${COLORS.black};
+`
 
 export const TotalSpan = styled.span`
   padding: .5rem;
   font-size: 1.5rem;
   letter-spacing: .3rem;
-  color: #ffffff;
-`;
+  color: ${COLORS.white};
+`
 
 export const TotalNumber = styled.span`
   font-size: 3rem;
-  color: rgb(131,227,100);
+  color: ${COLORS.green};
   height: 100%;
-`;
+`
 
 export const IntegerPart = styled.span`
   font-size: 3rem;
   font-weight: bold;
-`;
+`
 
 export const DecimalPart = styled.span`
   font-size: 2rem;
-  color: rgb(128, 128, 128);
+  color: ${COLORS.grey};
   margin-left: 0.1rem;
-`;
+`

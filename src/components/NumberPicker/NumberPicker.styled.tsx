@@ -1,8 +1,6 @@
 import { styled } from 'styled-components'
-import { flex } from '../../mixins/setFlex'
-import { size } from '../../mixins/setSize'
-import { sizeMax } from '../../mixins/setSizeMax'
-import { COLORS } from '../../constants/colors'
+import { flex, size, sizeMax } from '../../mixins'
+import { COLORS } from '../../constants'
 
 export const PopupOverlay = styled.div`
     ${flex('column', 'center', 'center')}
