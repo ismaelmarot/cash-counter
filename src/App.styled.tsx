@@ -66,14 +66,14 @@ export const ArrowButton = styled.button<{ $left?: boolean }>`
   ${({ $left }) => ($left ? 'left: 10px;' : 'right: 10px;')}
   transform: translateY(-50%);
   z-index: 10;
-  background: rgba(0,0,0,0.5);
-  color: white;
+  background: ${COLORS.black};
+  color: ${COLORS.white};
   border: none;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.5rem;
 
   &:hover {
-    background: rgba(0,0,0,0.8);
+    background: ${COLORS.white};
   }
 `
