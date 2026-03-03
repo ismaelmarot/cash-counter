@@ -1,10 +1,12 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { flex } from './mixins/setFlex'
+import { size } from './mixins/setSize'
 
 export const AppContainer = styled.div`
   background-color: rgb(255,255,255);
   position: relative;
   overflow: hidden;
-`;
+`
 
 export const Title = styled.h2`
   height: 5vh;
@@ -12,11 +14,11 @@ export const Title = styled.h2`
   font-size: 1.5rem;
   text-align: left;
   color: rgb(0, 0, 0);
-`;
+`
 
 export const DivStyled = styled.div`
   height: 100vh;
-`;
+`
 
 export const CardCashCounterContainer = styled.div`
   display: flex;
@@ -29,20 +31,16 @@ export const CardCashCounterContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-`;
+`
 
 export const Card = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${flex('column','center','center')}
   flex: 0 0 100%;
   scroll-snap-align: start;
-`;
+`
 
-/**
- * Usamos $left para que no se pase al DOM
- */
 export const ArrowButton = styled.button<{ $left?: boolean }>`
+  ${size('40px','40px')}
   position: absolute;
   top: 50%;
   ${({ $left }) => ($left ? 'left: 10px;' : 'right: 10px;')}
@@ -52,12 +50,10 @@ export const ArrowButton = styled.button<{ $left?: boolean }>`
   color: white;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
   font-size: 1.5rem;
 
   &:hover {
     background: rgba(0,0,0,0.8);
   }
-`;
+`
