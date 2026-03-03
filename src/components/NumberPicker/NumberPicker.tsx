@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react'
 import { NumberPickerProps } from '../../interface'
 import {
