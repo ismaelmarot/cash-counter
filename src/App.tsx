@@ -1,10 +1,11 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { DENOMINATIONS } from './constants'
 import {
   BillInput,
   Footer,
   SummaryCard,
-  Total
+  Total,
+  ResetModal
 } from './components'
 import {
   AppContainer,
@@ -17,10 +18,10 @@ import {
   TitleButtonContainer,
 } from './App.styled'
 import { useCashCounter } from './hooks'
-import { VscDebugRestart } from 'react-icons/vsc'
 
 function App() {
   const { quantities, updateQuantity, total } = useCashCounter()
+  const [showResetModal, setShowResetModal] = useState(false)
 
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -39,8 +40,9 @@ function App() {
       <div>
         <TitleButtonContainer>
           <Title>Cash Counter</Title>
-          <ButtonRestart onClick={() => window.location.reload()}>
-            <RestarIcon />
+
+          <ButtonRestart onClick={() => setShowResetModal(true)}>
+            <RestarIcon size={22} />
           </ButtonRestart>
         </TitleButtonContainer>
 
@@ -68,8 +70,13 @@ function App() {
           <SummaryCard quantities={quantities} />
         </CardCashCounterContainer>
       </div>
-
       <Footer />
+
+      <ResetModal
+        open={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={() => window.location.reload()}
+      />
     </AppContainer>
   )
 }
