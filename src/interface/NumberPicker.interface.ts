@@ -1,4 +1,4 @@
 export interface NumberPickerProps {
-    value: string;
-    onChange: (value: string) => void;
+    value: number
+    onChange: (value: number) => void
 }

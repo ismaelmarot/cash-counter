@@ -8,12 +8,7 @@ import {
     DecimalPart
 } from './Total.styled'
 
-export const Total: FC<TotalsProps> = ({ quantities, denominations }) => {
-    const total = quantities.reduce(
-        (acc, qty, i) => acc + (Number(qty) || 0) * denominations[i],
-        0
-    )
-
+export const Total: FC<TotalsProps> = ({ total }) => {
     const formatted = total.toLocaleString('es-AR', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,

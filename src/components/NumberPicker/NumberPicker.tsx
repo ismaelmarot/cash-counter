@@ -17,32 +17,31 @@ export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
 
   return (
     <>
-      {/* Trigger */}
       <SelectedNumber onClick={() => setOpen(true)}>
-        {value || '0'}
+        {value === 0 ? '0' : value.toLocaleString('es-AR')}
       </SelectedNumber>
 
       {open && (
         <PopupOverlay>
           <PopupContent>
             <CloseButton onClick={() => setOpen(false)}>✖</CloseButton>
+
             <ZeroFixed
               onClick={() => {
-                onChange('0');
-                setOpen(false);
+                onChange(0)
+                setOpen(false)
               }}
             >
               0
             </ZeroFixed>
 
-            {/* Scrolleable List */}
             <NumberList>
               {numbers.map((num) => (
                 <NumberItem
                   key={num}
                   onClick={() => {
-                    onChange(num.toString());
-                    setOpen(false);
+                    onChange(num)
+                    setOpen(false)
                   }}
                 >
                   {num.toLocaleString('es-AR')}

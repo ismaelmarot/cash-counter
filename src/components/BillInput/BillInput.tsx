@@ -13,12 +13,14 @@ import {
 import { NumberPicker } from '..'
 
 export const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
+    
     const formattedDenomination =
         denomination >= 1
-        ? denomination.toLocaleString('es-AR', { minimumFractionDigits: 0 })
-        : denomination.toLocaleString('es-AR', { minimumFractionDigits: 2 })
+            ? denomination.toLocaleString('es-AR', { minimumFractionDigits: 0 })
+            : denomination.toLocaleString('es-AR', { minimumFractionDigits: 2 })
 
-    const subtotal = (Number(quantity) || 0) * denomination
+    // 👇 YA NO convertimos a Number porque ya es number
+    const subtotal = quantity * denomination
 
     const formattedSubtotal = subtotal.toLocaleString('es-AR', {
         minimumFractionDigits: 2,
@@ -34,7 +36,10 @@ export const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange
                 <Denomination>{formattedDenomination}</Denomination>
             </AmountTipe>
 
-            <NumberPicker value={quantity} onChange={onChange} />
+            <NumberPicker 
+                value={quantity} 
+                onChange={onChange} 
+            />
             
             <AmountTotal>
                 <PriceSimbol>$</PriceSimbol>

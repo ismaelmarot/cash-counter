@@ -1,5 +1,5 @@
 export interface BillInputProps {
-    denomination: number;
-    quantity: string;
-    onChange: (value: string) => void;
+    denomination: number
+    quantity: number
+    onChange: (value: number) => void
 }

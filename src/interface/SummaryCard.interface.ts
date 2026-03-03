@@ -1,3 +1,3 @@
 export interface SummaryCardProps {
-    quantities: string[];
+    quantities: number[]
 }
