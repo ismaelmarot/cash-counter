@@ -9,11 +9,15 @@ import {
 import {
   AppContainer,
   ArrowButton,
+  ButtonRestart,
   Card,
   CardCashCounterContainer,
+  RestarIcon,
   Title,
+  TitleButtonContainer,
 } from './App.styled'
 import { useCashCounter } from './hooks'
+import { VscDebugRestart } from 'react-icons/vsc'
 
 function App() {
   const { quantities, updateQuantity, total } = useCashCounter()
@@ -33,7 +37,12 @@ function App() {
   return (
     <AppContainer>
       <div>
-        <Title>Cash Counter</Title>
+        <TitleButtonContainer>
+          <Title>Cash Counter</Title>
+          <ButtonRestart onClick={() => window.location.reload()}>
+            <RestarIcon />
+          </ButtonRestart>
+        </TitleButtonContainer>
 
         <Total total={total} />
 

@@ -1,22 +1,43 @@
 import styled from 'styled-components'
 import { flex, size } from './mixins'
+import { VscDebugRestart } from 'react-icons/vsc'
+import { COLORS } from './constants'
 
 export const AppContainer = styled.div`
-  background-color: rgb(255,255,255);
+  background-color: ${COLORS.white};
   position: relative;
   overflow: hidden;
 `
 
+export const TitleButtonContainer = styled.div`
+  ${flex('row','center','space-between')}
+  align-items: stretch;
+`
+
 export const Title = styled.h2`
-  height: 5vh;
-  padding: .3rem 1rem;
-  font-size: 1.5rem;
+  height: 100%;
+  margin: 0;
+  padding: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
   text-align: left;
-  color: rgb(0, 0, 0);
+  color: ${COLORS.black};
+`
+
+export const ButtonRestart = styled.button`
+  width: 4rem;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+`
+
+export const RestarIcon = styled(VscDebugRestart)`
+  ${size('100%','100%')}
+  max-width: 3rem;
 `
 
 export const DivStyled = styled.div`
-  height: 100vh;
+  height: 100dvh;
 `
 
 export const CardCashCounterContainer = styled.div`
