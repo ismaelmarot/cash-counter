@@ -1,20 +1,20 @@
-import styled from 'styled-components';
-import { Colors } from '../../constants/colors';
+import styled from 'styled-components'
+import { COLORS } from '../../constants'
 
 export const FooterStyled = styled.footer`
     margin: 2rem .5rem .5rem;
-    border-top: 2px solid ${Colors.lightGrey};
+    border-top: 2px solid ${COLORS.lightGrey};
     font-size: .8rem;
 `
 export const Button = styled.button`
-    color: ${Colors.black};
-`;
+    color: ${COLORS.black};
+`
 
 export const Span = styled.span`
-    color: ${Colors.black};
+    color: ${COLORS.black};
     font-weight: bolder;
-`;
+`
 
 export const DivDesigned = styled.div`
-    color: ${Colors.black};
-`;
+    color: ${COLORS.black};
+`

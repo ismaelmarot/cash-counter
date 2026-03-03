@@ -1,13 +1,25 @@
 import { forwardRef } from 'react'
 import jsPDF from 'jspdf'
-import { denominations } from '../../constants/denominations'
+import { DENOMINATIONS } from '../../constants'
 import { SummaryCardProps } from '../../interface/SummaryCard.interface'
-import { CardStyled, ResumeContainer, H3, Amount, Quantity, NumberStyled, ButtonStyled, ButtonContainer, IntegerPart, DecimalPart, Total } from './SummaryCard.styled'
+import {
+  Amount,
+  ButtonContainer,
+  ButtonStyled,
+  CardStyled,
+  DecimalPart,
+  H3,
+  IntegerPart,
+  NumberStyled,
+  ResumeContainer,
+  Quantity,
+  Total
+} from './SummaryCard.styled'
 
 export const SummaryCard = forwardRef<HTMLDivElement, SummaryCardProps>(
   ({ quantities }, ref) => {
     const total = quantities.reduce(
-      (acc, qty, i) => acc + (Number(qty) || 0) * denominations[i],
+      (acc, qty, i) => acc + (Number(qty) || 0) * DENOMINATIONS[i],
       0
     )
 
@@ -26,7 +38,7 @@ export const SummaryCard = forwardRef<HTMLDivElement, SummaryCardProps>(
 
       doc.setFontSize(12)
       let y = 30
-      denominations.forEach((denom, i) => {
+      DENOMINATIONS.forEach((denom, i) => {
         const qty = Number(quantities[i]) || 0
         const subtotal = qty * denom
 
@@ -52,7 +64,7 @@ export const SummaryCard = forwardRef<HTMLDivElement, SummaryCardProps>(
         <ResumeContainer>
           <H3>RESUMEN</H3>
           <div>
-            {denominations.map((denom, i) => (
+            {DENOMINATIONS.map((denom, i) => (
               <NumberStyled key={denom}>
                 <Amount>{denom.toLocaleString('es-AR')}</Amount>
                 <Quantity>{quantities[i] || 0}</Quantity>

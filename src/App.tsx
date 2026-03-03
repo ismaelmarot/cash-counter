@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react'
-import { denominations } from './constants/denominations'
+import { DENOMINATIONS } from './constants'
 import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from './App.styled'
 import { BillInput, Footer, SummaryCard, Total } from './components'
 
 function App() {
-  const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''))
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [quantities, setQuantities] = useState<string[]>(DENOMINATIONS.map(() => ''))
+  const containerRef = useRef<HTMLDivElement>(null)
 
   const handleChange = (index: number, value: string) => {
     const newQuantities = [...quantities];
@@ -27,13 +27,13 @@ function App() {
     <AppContainer>
       <div>
         <Title>Cash Counter</Title>
-        <Total quantities={quantities} denominations={denominations} />
+        <Total quantities={quantities} denominations={DENOMINATIONS} />
         
         <ArrowButton $left onClick={() => scroll('left')}>◀</ArrowButton>
         <ArrowButton onClick={() => scroll('right')}>▶</ArrowButton>
 
         <CardCashCounterContainer ref={containerRef}>
-          {denominations.map((denom, i) => (
+          {DENOMINATIONS.map((denom, i) => (
             <Card key={denom}>
               <BillInput
                 denomination={denom}
