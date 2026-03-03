@@ -1,7 +1,6 @@
-import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
-import { getCurrentYear } from '../../helpers/getCurrentYear'
-import type { LegalModalProps } from '../../interface/LegalModal.interface'
+import { getCurrentYear } from '../../helpers'
+import type { LegalModalProps } from '../../interface'
 import { ModalBodyStyled, StyledLink } from './LegalModal.styled'
 
 export const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {

@@ -1,3 +1,3 @@
 export function getCurrentYear(): number {
-    return new Date().getFullYear();
+    return new Date().getFullYear()
 }

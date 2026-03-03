@@ -10,7 +10,7 @@ import {
     IntegerPart, 
     DecimalPart 
 } from './BillInput.styled.js'
-import { NumberPicker } from '../NumberPicker'
+import { NumberPicker } from '..'
 
 export const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
     const formattedDenomination =

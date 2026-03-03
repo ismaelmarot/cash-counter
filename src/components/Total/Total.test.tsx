@@ -1,11 +1,11 @@
 /// <reference types="vitest" />
-import { render, screen } from '@testing-library/react';
-import Totals from './Totals';
-import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/react'
+import { Total } from './Total'
+import { describe, it, expect } from 'vitest'
 
-describe('Totals Component', () => {
+describe('Total Component', () => {
     it('renders the Total label', () => {
-        render(<Totals quantities={[]} denominations={[]} />);
+        render(<Total quantities={[]} denominations={[]} />);
         const totalLabel = screen.getByText(/Total/);
         expect(totalLabel).toBeInTheDocument();
     });
@@ -14,7 +14,7 @@ describe('Totals Component', () => {
         const quantities = ['2', '1', '5'];
         const denominations = [20000, 10000, 2000];
 
-        render(<Totals quantities={quantities} denominations={denominations} />);
+        render(<Total quantities={quantities} denominations={denominations} />);
 
         const totalSpan = screen.getByText((content) => {
         const cleaned = content.replace(/\./g, '').replace(',', '.');
@@ -28,7 +28,7 @@ describe('Totals Component', () => {
         const quantities = ['', 'abc', undefined as any];
         const denominations = [20000, 10000, 2000];
 
-        render(<Totals quantities={quantities} denominations={denominations} />);
+        render(<Total quantities={quantities} denominations={denominations} />);
 
         const totalSpan = screen.getByText((content) => {
         const cleaned = content.replace(/\./g, '').replace(',', '.');

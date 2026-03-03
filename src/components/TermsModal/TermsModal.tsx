@@ -1,11 +1,6 @@
-import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
+import { TermsModalProps } from '../../interface'
 import { getCurrentYear } from '../../helpers/getCurrentYear'
-
-interface TermsModalProps {
-    show: boolean;
-        onClose: () => void
-}
 
 export const TermsModal: React.FC<TermsModalProps> = ({ show, onClose }) => {
     return (

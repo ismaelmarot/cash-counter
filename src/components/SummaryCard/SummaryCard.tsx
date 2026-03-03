@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 import jsPDF from 'jspdf'
 import { DENOMINATIONS } from '../../constants'
-import { SummaryCardProps } from '../../interface/SummaryCard.interface'
+import { SummaryCardProps } from '../../interface'
 import {
   Amount,
   ButtonContainer,

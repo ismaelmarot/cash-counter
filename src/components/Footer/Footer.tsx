@@ -1,6 +1,11 @@
-import React, { useState } from 'react'
-import { getCurrentYear } from '../../helpers/getCurrentYear'
-import { Button, FooterStyled, Span, DivDesigned } from './Footer.styled'
+import { useState } from 'react'
+import { getCurrentYear } from '../../helpers'
+import {
+    Button,
+    DivDesigned,
+    FooterStyled,
+    Span,
+} from './Footer.styled'
 import { LegalModal, TermsModal } from '..'
 
 export const Footer: React.FC = () => {

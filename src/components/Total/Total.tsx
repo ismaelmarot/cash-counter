@@ -1,6 +1,12 @@
 import type { FC } from 'react'
-import type { TotalsProps } from '../../interface/Totals.interface'
-import { TotalContainer, TotalNumber, TotalSpan, IntegerPart, DecimalPart } from './Total.styled'
+import type { TotalsProps } from '../../interface'
+import {
+    TotalContainer,
+    TotalNumber,
+    TotalSpan,
+    IntegerPart,
+    DecimalPart
+} from './Total.styled'
 
 export const Total: FC<TotalsProps> = ({ quantities, denominations }) => {
     const total = quantities.reduce(

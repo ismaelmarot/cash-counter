@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { NumberPickerProps } from '../../interface'
 import {
   CloseButton,
   NumberItem,
@@ -8,7 +9,6 @@ import {
   SelectedNumber,
   ZeroFixed
 } from './NumberPicker.styled'
-import { NumberPickerProps } from '../../interface/NumberPicker.interface'
 
 export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
   const [open, setOpen] = useState(false)
