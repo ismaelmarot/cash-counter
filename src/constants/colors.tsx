@@ -8,4 +8,6 @@ export const COLORS = {
     lightGrey: 'rgba(0, 0, 0, 0.3)',
     lightGreytWhite: 'rgba(240, 240, 240, 1)',
     red: 'rgba(243, 15, 34, 1)',
+    buttonNumber:'rgba(242, 242, 242, 1)',
+    blue: 'rgba(0, 122, 255, 1)',
 }

@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { useCashCounter } from './hooks'
 import { DENOMINATIONS } from './constants'
 import {
   BillInput,
@@ -17,7 +18,6 @@ import {
   Title,
   TitleButtonContainer,
 } from './App.styled'
-import { useCashCounter } from './hooks'
 
 function App() {
   const { quantities, updateQuantity, total } = useCashCounter()

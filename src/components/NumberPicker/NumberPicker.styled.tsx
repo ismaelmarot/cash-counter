@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { flex, size, sizeMax } from '../../mixins'
+import { flex, size } from '../../mixins'
 import { COLORS } from '../../constants'
 
 export const PopupOverlay = styled.div`
@@ -13,11 +13,10 @@ export const PopupOverlay = styled.div`
 `
 
 export const PopupContent = styled.div`
-    ${flex('column', 'center', 'center')}
-    ${sizeMax('400px', '90%')}
+    ${flex('column', 'center', 'space-between')}
+    ${size('95%', '95%')}
     background: ${COLORS.white};
-    width: 90%;
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
 `
@@ -31,45 +30,31 @@ export const CloseButton = styled.button`
     padding: 0.5rem;
 `
 
-export const ZeroFixed = styled.div`
+export const Display = styled.div`
+  font-size: 3rem;
+  text-align: right;
+  padding: 1rem;
+  color: ${COLORS.black};
+`
+
+export const Keypad = styled.div`
+    display: grid;
     width: 90%;
-    padding: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    border-bottom: 1px solid ${COLORS.lightGrey};
-    background: ${COLORS.white};
-    cursor: pointer;
-
-    &:hover {
-        background: ${COLORS.lightGreytWhite};
-    }
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 `
 
-export const NumberList = styled.div`
-    width: 90%;
-    flex: 1;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    -webkit-overflow-scrolling: touch;
+export const Key = styled.button`
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: 12px;
+  border: none;
+  background: ${COLORS.buttonNumber};
+  cursor: pointer;
 `
 
-export const NumberItem = styled.div`
-    padding: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    scroll-snap-align: center;
-    cursor: pointer;
-
-    &:hover {
-        background: ${COLORS.lightGreytWhite}
-    }
-`
-
-export const SelectedNumber = styled.span`
-    ${flex('column', 'center', 'center')}
-    height: 60vh;
-    font-size: 10rem;
-    font-weight: bold;
-    color: ${COLORS.white};
-    cursor: pointer;
+export const ConfirmButton = styled(Key)`
+  color: ${COLORS.white};
+  background: ${COLORS.blue};
 `

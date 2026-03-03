@@ -1,52 +1,73 @@
-import { useState } from 'react'
+
+import { useState, useEffect } from 'react'
 import { NumberPickerProps } from '../../interface'
 import {
-  CloseButton,
-  NumberItem,
-  NumberList,
-  PopupContent,
   PopupOverlay,
-  SelectedNumber,
-  ZeroFixed
+  PopupContent,
+  CloseButton,
+  Display,
+  Keypad,
+  Key,
+  ConfirmButton
 } from './NumberPicker.styled'
 
 export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
   const [open, setOpen] = useState(false)
-  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1)
+  const [tempValue, setTempValue] = useState<string>(value.toString())
+
+  useEffect(() => {
+    setTempValue(value.toString())
+  }, [value])
+
+  const handleNumberClick = (num: string) => {
+    if (tempValue === '0') {
+      setTempValue(num)
+    } else {
+      setTempValue(tempValue + num)
+    }
+  }
+
+  const handleDelete = () => {
+    if (tempValue.length <= 1) {
+      setTempValue('0')
+    } else {
+      setTempValue(tempValue.slice(0, -1))
+    }
+  }
+
+  const handleConfirm = () => {
+    onChange(Number(tempValue))
+    setOpen(false)
+  }
 
   return (
     <>
-      <SelectedNumber onClick={() => setOpen(true)}>
-        {value === 0 ? '0' : value.toLocaleString('es-AR')}
-      </SelectedNumber>
+      <div onClick={() => setOpen(true)}>
+        {value.toLocaleString('es-AR')}
+      </div>
 
       {open && (
         <PopupOverlay>
           <PopupContent>
             <CloseButton onClick={() => setOpen(false)}>✖</CloseButton>
 
-            <ZeroFixed
-              onClick={() => {
-                onChange(0)
-                setOpen(false)
-              }}
-            >
-              0
-            </ZeroFixed>
+            <Display>
+              {Number(tempValue).toLocaleString('es-AR')}
+            </Display>
 
-            <NumberList>
-              {numbers.map((num) => (
-                <NumberItem
-                  key={num}
-                  onClick={() => {
-                    onChange(num)
-                    setOpen(false)
-                  }}
-                >
-                  {num.toLocaleString('es-AR')}
-                </NumberItem>
+            <Keypad>
+              {[1,2,3,4,5,6,7,8,9].map(num => (
+                <Key key={num} onClick={() => handleNumberClick(num.toString())}>
+                  {num}
+                </Key>
               ))}
-            </NumberList>
+
+              <Key onClick={() => handleNumberClick('0')}>0</Key>
+              <Key onClick={handleDelete}>⌫</Key>
+              <ConfirmButton onClick={handleConfirm}>
+                OK
+              </ConfirmButton>
+            </Keypad>
           </PopupContent>
         </PopupOverlay>
       )}

@@ -4,14 +4,13 @@ import { COLORS } from '../../constants'
 import { flex, size } from '../../mixins'
 
 export const CardInput = styled(BootstrapCard)`
-    ${flex('column', 'center','center')}
-    ${size('90%','90%')}
-    border-radius: .8rem;
+    ${flex('column', 'center','space-between')};
+    ${size('90%','95%')}
+    border-radius: 25px;
     background-color: ${COLORS.black};
-    backdrop-filter: blur(12px) saturate(150%);
-    -webkit-backdrop-filter: blur(12px) saturate(150%);
-    box-shadow: 0 8px 32px ${COLORS.lightGrey};
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: ${COLORS.white};
+    font-size: 4rem;
 
     &:hover {
         transform: scale(1.01);
@@ -20,15 +19,15 @@ export const CardInput = styled(BootstrapCard)`
 `;
 
 export const AmountTipe = styled.div`
+    ${flex('row', 'flex-end','flex-start')};
     width: 95%;
-    padding: .3rem 1rem;
     color: ${COLORS.white};
     border-bottom: 1px solid ${COLORS.white};
 `;
 
 export const SpanX = styled.span`
     font-size: 1.2rem;
-    margin-right: .5rem;
+    margin: 0rem .3rem .2rem;
 `;
 
 export const Denomination = styled.span`

@@ -19,7 +19,6 @@ export const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange
             ? denomination.toLocaleString('es-AR', { minimumFractionDigits: 0 })
             : denomination.toLocaleString('es-AR', { minimumFractionDigits: 2 })
 
-    // 👇 YA NO convertimos a Number porque ya es number
     const subtotal = quantity * denomination
 
     const formattedSubtotal = subtotal.toLocaleString('es-AR', {
@@ -40,6 +39,7 @@ export const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange
                 value={quantity} 
                 onChange={onChange} 
             />
+
             
             <AmountTotal>
                 <PriceSimbol>$</PriceSimbol>
