@@ -1,20 +1,20 @@
-import { useState, useRef } from 'react';
-import { denominations } from './constants/denominations';
-import BillInput from './components/BillInput/BillInput';
-import Footer from './components/Footer/Footer';
-import Total from './components/Total/Total';
-import SummaryCard from './components/SummaryCard/SummaryCard';
-import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from './App.styled';
+import { useState, useRef } from 'react'
+import { denominations } from './constants/denominations'
+import Footer from './components/Footer/Footer'
+import Total from './components/Total/Total'
+import SummaryCard from './components/SummaryCard/SummaryCard'
+import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from './App.styled'
+import { BillInput } from './components'
 
 function App() {
-  const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''));
+  const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''))
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (index: number, value: string) => {
     const newQuantities = [...quantities];
-    newQuantities[index] = value;
-    setQuantities(newQuantities);
-  };
+    newQuantities[index] = value
+    setQuantities(newQuantities)
+  }
 
   const scroll = (direction: 'left' | 'right') => {
     if (containerRef.current) {
@@ -22,9 +22,9 @@ function App() {
       containerRef.current.scrollBy({
         left: direction === 'left' ? -width : width,
         behavior: 'smooth',
-      });
+      })
     }
-  };
+  }
 
   return (
     <AppContainer>
@@ -52,7 +52,7 @@ function App() {
       </div>
       <Footer />
     </AppContainer>
-  );
+  )
 }
 
-export default App;
+export default App
