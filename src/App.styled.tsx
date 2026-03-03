@@ -74,6 +74,7 @@ export const ArrowButton = styled.button<{ $left?: boolean }>`
   font-size: 1.5rem;
 
   &:hover {
+    color: ${COLORS.black};
     background: ${COLORS.white};
   }
 `
