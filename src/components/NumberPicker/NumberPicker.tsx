@@ -1,12 +1,19 @@
-import { useState } from 'react';
-import styled from 'styled-components';
-import { CloseButton, NumberItem, NumberList, PopupContent, PopupOverlay, SelectedNumber, ZeroFixed } from './NumberPicker.styled';
-import { NumberPickerProps } from '../../interface/NumberPicker.interface';
+import { useState } from 'react'
+import {
+  CloseButton,
+  NumberItem,
+  NumberList,
+  PopupContent,
+  PopupOverlay,
+  SelectedNumber,
+  ZeroFixed
+} from './NumberPicker.styled'
+import { NumberPickerProps } from '../../interface/NumberPicker.interface'
 
-const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
-  const [open, setOpen] = useState(false);
+export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
+  const [open, setOpen] = useState(false)
 
-  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
+  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1)
 
   return (
     <>
@@ -46,7 +53,5 @@ const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
         </PopupOverlay>
       )}
     </>
-  );
-};
-
-export default NumberPicker;
+  )
+}

@@ -1,10 +1,7 @@
 import { useState, useRef } from 'react'
 import { denominations } from './constants/denominations'
-import Footer from './components/Footer/Footer'
-import Total from './components/Total/Total'
-import SummaryCard from './components/SummaryCard/SummaryCard'
 import { AppContainer, Title, CardCashCounterContainer, Card, ArrowButton } from './App.styled'
-import { BillInput } from './components'
+import { BillInput, Footer, SummaryCard, Total } from './components'
 
 function App() {
   const [quantities, setQuantities] = useState<string[]>(denominations.map(() => ''))

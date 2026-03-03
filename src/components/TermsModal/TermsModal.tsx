@@ -1,13 +1,13 @@
-import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
-import { getCurrentYear } from '../../helpers/getCurrentYear';
+import React from 'react'
+import { Modal, Button } from 'react-bootstrap'
+import { getCurrentYear } from '../../helpers/getCurrentYear'
 
 interface TermsModalProps {
     show: boolean;
-        onClose: () => void;
+        onClose: () => void
 }
 
-const TermsModal: React.FC<TermsModalProps> = ({ show, onClose }) => {
+export const TermsModal: React.FC<TermsModalProps> = ({ show, onClose }) => {
     return (
         <Modal show={show} onHide={onClose}>
         <Modal.Header closeButton>
@@ -50,7 +50,5 @@ const TermsModal: React.FC<TermsModalProps> = ({ show, onClose }) => {
             <Button variant='secondary' onClick={onClose}>Cerrar</Button>
         </Modal.Footer>
         </Modal>
-    );
-};
-
-export default TermsModal;
+    )
+}

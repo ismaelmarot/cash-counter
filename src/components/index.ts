@@ -1,1 +1,7 @@
 export * from './BillInput'
+export * from './Footer'
+export * from './LegalModal'
+export * from './NumberPicker'
+export * from './SummaryCard'
+export * from './TermsModal'
+export * from './Total'

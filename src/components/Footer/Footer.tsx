@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { getCurrentYear } from '../../helpers/getCurrentYear';
-import LegalModal from '../../components/LegalModal/LegalModal';
-import TermsModal from '../../components/TermsModal/TermsModal';
-import { Button, FooterStyled, Span, DivDesigned } from './Footer.styled';
+import React, { useState } from 'react'
+import { getCurrentYear } from '../../helpers/getCurrentYear'
+import { Button, FooterStyled, Span, DivDesigned } from './Footer.styled'
+import { LegalModal, TermsModal } from '..'
 
-const Footer: React.FC = () => {
-    const [showLegal, setShowLegal] = useState(false);
-    const [showTerms, setShowTerms] = useState(false);
+export const Footer: React.FC = () => {
+    const [showLegal, setShowLegal] = useState(false)
+    const [showTerms, setShowTerms] = useState(false)
 
     return (
         <>
@@ -40,7 +39,5 @@ const Footer: React.FC = () => {
         <LegalModal show={showLegal} onClose={() => setShowLegal(false)} />
         <TermsModal show={showTerms} onClose={() => setShowTerms(false)} />
         </>
-    );
-};
-
-export default Footer;
+    )
+}

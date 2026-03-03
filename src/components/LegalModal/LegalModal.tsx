@@ -1,10 +1,10 @@
-import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
-import { getCurrentYear } from '../../helpers/getCurrentYear';
-import type { LegalModalProps } from '../../interface/LegalModal.interface';
-import { ModalBodyStyled, StyledLink } from './LegalModal.styled';
+import React from 'react'
+import { Modal, Button } from 'react-bootstrap'
+import { getCurrentYear } from '../../helpers/getCurrentYear'
+import type { LegalModalProps } from '../../interface/LegalModal.interface'
+import { ModalBodyStyled, StyledLink } from './LegalModal.styled'
 
-const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
+export const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
     return (
         <Modal show={show} onHide={onClose}>
             <Modal.Header closeButton>
@@ -46,7 +46,5 @@ const LegalModal: React.FC<LegalModalProps> = ({ show, onClose }) => {
                 <Button variant='secondary' onClick={onClose}>Cerrar</Button>
             </Modal.Footer>
         </Modal>
-    );
-};
-
-export default LegalModal;
+    )
+}

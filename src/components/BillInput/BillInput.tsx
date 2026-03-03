@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { BillInputProps } from '../../interface/BillInput.interface.js'
+import { BillInputProps } from '../../interface'
 import { 
     CardInput, 
     Denomination, 
@@ -10,7 +10,7 @@ import {
     IntegerPart, 
     DecimalPart 
 } from './BillInput.styled.js'
-import NumberPicker from '../NumberPicker/NumberPicker'
+import { NumberPicker } from '../NumberPicker'
 
 export const BillInput: FC<BillInputProps> = ({ denomination, quantity, onChange }) => {
     const formattedDenomination =
