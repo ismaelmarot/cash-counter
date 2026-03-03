@@ -12,7 +12,6 @@ import {
 
 export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
   const [open, setOpen] = useState(false)
-
   const numbers = Array.from({ length: 1000 }, (_, i) => i + 1)
 
   return (
