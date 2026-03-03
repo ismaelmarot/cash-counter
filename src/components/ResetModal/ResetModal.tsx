@@ -4,6 +4,7 @@ import {
   ModalContent,
   ModalButtons,
   TextContainer,
+  AlertIcon,
 } from './ResetModal.styled'
 
 interface ResetModalProps {
@@ -23,6 +24,7 @@ export const ResetModal: FC<ResetModalProps> = ({
     <ModalOverlay>
       <ModalContent>
         <TextContainer>
+            <AlertIcon />
             <h3>Reset Counter?</h3>
             <p>Are you sure you want to delete all values?</p>
             <p>This action cannot be undone.</p>

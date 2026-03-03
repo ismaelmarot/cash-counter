@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { IoMdAlert } from 'react-icons/io'
 import { flex, size } from '../../mixins'
 import { COLORS } from '../../constants'
 
@@ -36,6 +37,11 @@ export const ModalContent = styled.div`
         opacity: 0.7;
         font-size: 1.3rem;
     }
+`
+
+export const AlertIcon = styled(IoMdAlert)`
+    font-size: 4rem;
+    color: ${COLORS.red};
 `
 
 export const ModalButtons = styled.div`
