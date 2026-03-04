@@ -10,10 +10,6 @@ export const CardInput = styled(BootstrapCard)`
   background-color: ${COLORS.black};
   color: ${COLORS.white};
   font-size: 4rem;
-
-  &:hover {
-    box-shadow: 0 12px 40px ${COLORS.lightGrey};
-  }
 `
 
 export const AmountTipe = styled.div`
