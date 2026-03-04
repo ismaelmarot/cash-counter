@@ -57,15 +57,37 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 4. [Installation](#installation)
 5. [Project Structure](#project-structure)
 6. [Key Module Relationships](#key-module-relationships)
-6. [Usage](#usage)
-7. [Testing](#testing)
-8. [Screenshots](#screenshots)
-9. [Live Demo](#live-demo)
+7. [Usage](#usage)
+8. [Testing](#testing)
+9. [Version](#version)
+10. [Screenshots](#screenshots)
+11. [Live Demo](#live-demo)
 
 <br>
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<a id="version"></a>
+## [Version](#-table-of-content)
+
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Version</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Date</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Changes</th>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">26/02/2026</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Weather general info</td>
+  </tr>
+</table>
+
+
+<br>
 
 ## 🌟 Version 1.1.0 Highlights
 
