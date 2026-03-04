@@ -12,23 +12,14 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 [![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.2-orange.svg)](https://vitejs.dev/)
 
-
 <p align="center">
-  <a href="https://ismaelmarot.github.io/WeatherApp/" target="_blank">
+  <a href="https://ismaelmarot.github.io/cash-counter/" target="_blank">
     <img src="https://img.shields.io/badge/Go-Live Demo-blue?style=for-the-badge" alt="Demo CashCounter" />
   </a>
 </p>
 
-<p align="center">
-  <a href="https://ismaelmarot.github.io/cash-counter">
-    <img 
-      src="https://img.shields.io/badge/🚀%20Go%20to%20App-blue?style=for-the-badge&logoWidth=30" 
-      alt="Go to the application"
-    >
-  </a>
-</p>
-
 <br>
+
 
 ---
 
