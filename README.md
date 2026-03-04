@@ -5,7 +5,7 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 
 [![Version](https://img.shields.io/badge/version-1.1.0-orange?style=for-the-badge)](https://github.com/ismaelmarot/cash-counter)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/blob/HEAD/LICENSE)
+[![License](https://img.shields.io/github/license/ismaelmarot/cash-counter?style=for-the-badge)](https://github.com/ismaelmarot/cash-counter/blob/main/LICENSE)
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 [![Node](https://img.shields.io/badge/Node-18.12+-blue.svg)](https://nodejs.org/)
