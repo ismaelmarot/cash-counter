@@ -51,7 +51,6 @@ function App() {
         <ArrowButton $left onClick={() => scroll('left')}>
           ◀
         </ArrowButton>
-
         <ArrowButton onClick={() => scroll('right')}>
           ▶
         </ArrowButton>

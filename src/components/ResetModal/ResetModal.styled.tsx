@@ -59,7 +59,7 @@ export const ModalButtons = styled.div`
         cursor: pointer;
         font-size: .95rem;
         font-weight: 500;
-        border-radius: 5px;
+        border-radius: 25px;
     }
 
     button:first-child {
@@ -75,6 +75,14 @@ export const ModalButtons = styled.div`
         font-weight: 600;
         color: ${COLORS.white};
         background-color: ${COLORS.red};
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 40px ${COLORS.lightGrey};
+            background-color: ${COLORS.red};
+            font-size: 2.5rem;
+        }
     }
 
     button:hover {
