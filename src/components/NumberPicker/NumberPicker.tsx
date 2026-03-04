@@ -7,7 +7,8 @@ import {
   Display,
   Keypad,
   Key,
-  ConfirmButton
+  ConfirmButton,
+  Counter
 } from './NumberPicker.styled'
 
 export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
@@ -41,9 +42,9 @@ export const NumberPicker = ({ value, onChange }: NumberPickerProps) => {
 
   return (
     <>
-      <div onClick={() => setOpen(true)}>
+      <Counter onClick={() => setOpen(true)}>
         {value.toLocaleString('es-AR')}
-      </div>
+      </Counter>
 
       {open && (
         <PopupOverlay>

@@ -31,7 +31,7 @@ export const CloseButton = styled.button`
 `
 
 export const Display = styled.div`
-  font-size: 3rem;
+  font-size: 8rem;
   text-align: right;
   padding: 1rem;
   color: ${COLORS.black};
@@ -57,4 +57,8 @@ export const Key = styled.button`
 export const ConfirmButton = styled(Key)`
   color: ${COLORS.white};
   background: ${COLORS.blue};
+`
+
+export const Counter = styled.div`
+  font-size: 8rem;
 `
