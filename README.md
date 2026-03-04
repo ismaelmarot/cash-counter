@@ -81,8 +81,8 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 
   <tr>
     <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">26/02/2026</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Weather general info</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">213/09/2025</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Cash count</td>
   </tr>
 </table>
 
