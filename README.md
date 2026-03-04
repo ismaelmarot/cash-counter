@@ -27,7 +27,25 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 <br>
 
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## What it Does?
+
+  - Calculates the total amount of cash based on selected bill denominations and quantities
+  - Allows users to input quantities through a custom numeric keypad modal
+  - Automatically formats values using Argentine locale (es-AR) for accurate currency display
+  - Dynamically updates subtotals and total amounts in real time
+  - Adapts its layout to mobile, tablet, and desktop viewports
+  - Provides a smooth and intuitive UI with animated interactions and responsive components
+  - Is structured as a Progressive Web App (PWA) ready for modern browser environments
+
+> [!CAUTION]
+> <sub>_Do not use in production (Experimental features)._</sub>
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🌟 Version 1.1.0 Highlights
 
