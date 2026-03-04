@@ -45,6 +45,26 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 
 <br>
 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## 📑 [TABLE OF CONTENT](#-table-of-content)
+
+1. [Highlights](#highlights)
+2. [Technologies Stack](#technologies)
+3. [Codebase Layer Map](#codebaser-layer-map)
+4. [Installation](#installation)
+5. [Project Structure](#project-structure)
+6. [Key Module Relationships](#key-module-relationships)
+6. [Usage](#usage)
+7. [Testing](#testing)
+8. [Screenshots](#screenshots)
+9. [Live Demo](#live-demo)
+
+<br>
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🌟 Version 1.1.0 Highlights
