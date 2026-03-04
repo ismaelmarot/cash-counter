@@ -1,4 +1,23 @@
-# Cash Counter 💵
+# CASH COUNTER
+<img src="public/icons/icon_cap.png" alt="Icon Cap" width="150">
+
+_Cash Counter_ is a **web application for counting bills** and calculating total cash quickly and easily. Built with **React**, **TypeScript**, and **Vite**, it can be deployed effortlessly on **GitHub Pages**.
+
+[![Version](https://img.shields.io/badge/version-1.1.0-orange?style=for-the-badge)](https://github.com/ismaelmarot/cash-counter)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/blob/HEAD/LICENSE)
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+[![Node](https://img.shields.io/badge/Node-18.12+-blue.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.1.2-orange.svg)](https://vitejs.dev/)
+
+
+<p align="center">
+  <a href="https://ismaelmarot.github.io/WeatherApp/" target="_blank">
+    <img src="https://img.shields.io/badge/Go-Live Demo-blue?style=for-the-badge" alt="Demo CashCounter" />
+  </a>
+</p>
 
 <p align="center">
   <a href="https://ismaelmarot.github.io/cash-counter">
@@ -9,13 +28,7 @@
   </a>
 </p>
 
-[![Version](https://img.shields.io/badge/version-1.1.0-orange?style=for-the-badge)](https://github.com/ismaelmarot/cash-counter)  
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)  
-[![Node](https://img.shields.io/badge/Node-18.12+-blue.svg)](https://nodejs.org/)  
-[![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)  
-[![Vite](https://img.shields.io/badge/Vite-7.1.2-orange.svg)](https://vitejs.dev/)  
-
-Cash Counter is a **web application for counting bills** and calculating total cash quickly and easily. Built with **React**, **TypeScript**, and **Vite**, it can be deployed effortlessly on **GitHub Pages**.
+<br>
 
 ---
 
