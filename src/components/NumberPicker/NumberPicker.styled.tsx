@@ -8,7 +8,7 @@ export const PopupOverlay = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    background: ${COLORS.lightBlack};
+    background: ${COLORS.blackBlur};
     z-index: 2000;
 `
 
@@ -16,7 +16,7 @@ export const PopupContent = styled.div`
     ${flex('column', 'center', 'space-between')}
     ${size('95%', '95%')}
     background: ${COLORS.white};
-    border-radius: 5px;
+    border-radius: 25px;
     overflow: hidden;
     position: relative;
 `
