@@ -347,19 +347,91 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-<a id="usage"></a>
-## ▶️ [USAGE](#usage)
+<a id="implement"></a>
+## ▶️ [IMPLEMENT](#-table-of-content)
 
-WeatherApp provides a clean and fast interface to explore detailed weather information for any location.
+*After installing dependencies and setting, you can use the app as follows:*
 
-### 1. Search for a location
+### Run the App
+
+*1. In your terminal:*
+
+  ```bash
+      npm run dev
+  ```
+
+*2. Then open your browser at the localhost you are using:*
+
+  [Open the app](http://localhost:5173)
 
 
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a id="testing"></a>
+## 🧪 [Testing](#-table-of-content)
+This project uses **Vitest** for unit testing and **React Testing Library** for component tests.
+
+***1. Install testing dependencies***
+
+If not already installed via `npm install`, run:
+
+```bash
+# Using npm
+npm install --save-dev vitest @testing-library/react @testing-library/jest-dom
+```
+
+***2. Run all tests***
+
+```bash
+# Using npm
+npm run test
+```
+
+***3. Run in watch mode***
+> [!TIP]
+> <sub>_By default, this runs all tests once and exit._</sub>
+
+```bash
+# Using npm
+npm run test:watch
+```
 
 
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+<a id="screenshots"></a>
+## 📸 [Screenshots](#-table-of-content)
 
+>### 📱 Mobile
+
+<p align="center">
+  <img src="src/screenshots/screenshot01.png" width="250"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="src/screenshots/screenshot02.png" width="250"/>
+</p>
+
+<details>
+<summary><strong>See more...</strong></summary>
+<br>
+<p align="center">
+  <img src="" width="250"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="" width="250"/>
+</p>
+<p align="center">
+  <img src="" width="250"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="" width="250"/>
+
+</p>
+</details>
+
+<br>
 
 
 
