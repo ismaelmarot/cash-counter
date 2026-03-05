@@ -341,7 +341,7 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
   &nbsp;
 > ![Total](https://img.shields.io/badge/src%2FApp.tsx-1--28-gray?labelColor=black&style=for-the-badge)
   &nbsp;
-> > ![ResetMOdal](https://img.shields.io/badge/src%2FApp.tsx-1--39-gray?labelColor=black&style=for-the-badge)
+> ![ResetMOdal](https://img.shields.io/badge/src%2FApp.tsx-1--39-gray?labelColor=black&style=for-the-badge)
   &nbsp;
 
 
