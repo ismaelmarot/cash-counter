@@ -347,6 +347,26 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="usage"></a>
+## ▶️ [USAGE](#usage)
+
+WeatherApp provides a clean and fast interface to explore detailed weather information for any location.
+
+### 1. Search for a location
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
