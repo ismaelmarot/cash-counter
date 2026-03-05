@@ -58,7 +58,7 @@ The application is structured as a Progressive Web App (PWA), built with **React
 2. [Technologies Stack](#technologies)
 3. [Codebase Layer Map](#codebaser-layer-map)
 4. [Installation](#installation)
-5. [usage](#usage)
+5. [Usage](#usage)
 6. [Project Structure](#project-structure)
 7. [Key Module Relationships](#key-module-relationships)
 8. [Usage](#usage)
