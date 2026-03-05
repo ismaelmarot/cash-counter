@@ -265,7 +265,84 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="project-structure"></a>
 
+## 📂 [PROJECT STRUCTURE](#-table-of-content)
+
+*Diagram: Core module dependencies*
+
+```planindex
+    CASH COUNTER
+    src/
+      ├── App.tsx                  # Root component
+      ├── main.tsx                 # ReactDOM entry
+      ├── pages/
+      │   └── Counter/
+      │   ├── Counter.tsx          # Main screen logic
+      │   └── Counter.styles.ts    # Layout and styled components
+      ├── components/
+      │   ├── Display/             # Large numeric display
+      │   ├── Keypad/              # Numeric keypad container
+      │   ├── Key/                 # Individual key button
+      │   └── index.ts             # Barrel export
+      ├── hooks/
+      │   └── useCounter.ts        # Counter state and logic
+      ├── constants/
+      │   └── colors.ts            # UI color system
+      ├── styles/
+      │   └── GlobalStyles.ts      # Global CSS reset and base styles
+      ├── assets/
+      │   └── icons/               # App icons and images
+      └── types/
+          └── index.ts             # TypeScript definitions
+```
+
+
+
+
+
+
+
+
+
+
+XXX
+
+
+
+```plaintex
+  CASH COUNTER
+  src/
+  ├── App.tsx                     # Root component
+  ├── main.tsx                    # ReactDOM entry
+  ├── pages/
+  │   └── Counter/
+  │       ├── Counter.tsx         # Main screen logic
+  │       └── Counter.styles.ts   # Layout and styled components
+  ├── components/
+  │   ├── Display/                # Large numeric display
+  │   ├── Keypad/                 # Numeric keypad container
+  │   ├── Key/                    # Individual key button
+  │   └── index.ts                # Barrel export
+  ├── hooks/
+  │   └── useCounter.ts           # Counter state and logic
+  ├── constants/
+  │   └── colors.ts               # UI color system
+  ├── styles/
+  │   └── GlobalStyles.ts         # Global CSS reset and base styles
+  ├── assets/
+  │   └── icons/                  # App icons and images
+  └── types/
+      └── index.ts                # TypeScript definitions
+```
+
+
+
+XXX
+
+
+
+<br>
 <br>
 <br>
 <br>
