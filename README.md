@@ -1,7 +1,8 @@
 # CASH COUNTER
 <img src="public/icons/icon_cap.png" alt="Icon Cap" width="150">
 
-_Cash Counter_ is a **browser-based web application for counting physical banknotes and coins**.<br>
+_Cash Counter_ is a **browser-based web application for counting physical banknotes and coins**.
+
 A user selects a denomination, enters a quantity via a custom numeric keypad, and the application computes per-denomination subtotals and a running grand total in real time. A summary can be exported as a PDF.<br>
 The application is structured as a Progressive Web App (PWA), built with **React**, **TypeScript**, and **Vite**, and is deployed on GitHub Pages.
 
