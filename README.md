@@ -155,26 +155,23 @@ The application is structured as a Progressive Web App (PWA), built with **React
 ## 🔄 [Codebase Layer Map](#table-of-control)
 
 ```mermaid
-flowchart TD
+    flowchart TD
     A["main.tsx<br/>DeviceLayout"] --> B["App.tsx"]
-
-    B --> C["useCashCounter<br/>(hook)"]
-    C --> D["Denominations"]
 
     B --> E["BillInput"]
     E --> F["NumberPicker"]
 
+    B --> C["useCashCounter<br/>(hook)"]
     B --> G["SummaryCard"]
-    G --> H["Denominations"]
+
+    C --> D["Denominations"]
+    G --> D
+
     G --> I["jsPDF"]
 
     B --> J["Total"]
-
     B --> K["ResetModal"]
-
     B --> L["Footer"]
-
-
 ```
 
 > ## sources:
