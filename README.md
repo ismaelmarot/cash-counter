@@ -299,7 +299,6 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
     └─ main.tsx 
 ```
 
-
 <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -341,11 +340,16 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
 &nbsp;
 [![components/SummaryCard](https://img.shields.io/badge/components%2FSummaryCard-1--86-gray?labelColor=black&style=for-the-badge)](src/components/SummaryCard)
 &nbsp;
-[![components/ResetModal](https://img.shields.io/badge/components%2FResetModal-1--39-gray?labelColor=black&style=for-the-badge)](src/components/ResetModal)tyle=for-the-badge)](src/types)
-&nbsp;
+[![components/ResetModal](https://img.shields.io/badge/components%2FResetModal-1--39-gray?labelColor=black&style=for-the-badge)](src/components/ResetModal)
+
 
 <br>
-<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 <br>
 <br>
 <br>
