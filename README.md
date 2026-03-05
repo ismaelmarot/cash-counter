@@ -232,14 +232,49 @@ Then run the development server again:
     npm run dev
   ```
 
+<br>
 
-💡 **Tip de README (muy usado en proyectos pro):**
-
-Después de **INSTALLATION**, conviene agregar esta sección:
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+<a id="usage"></a>
 
+## ▶️ USAGE
+
+CashCounter allows you to quickly calculate the total amount of cash based on the number of bills entered for each denomination.
+
+### 1. Enter bill quantities
+
+Use the **BillInput** fields to enter how many bills you have for each denomination.
+
+The **NumberPicker** helps you increase or decrease the amount quickly without typing.
+
+### 2. View the total instantly
+
+As you update the quantities, the application automatically calculates the **total amount of cash** in real time.
+
+The result is displayed in the **Total** component.
+
+### 3. Review the summary
+
+The **SummaryCard** shows a breakdown of the entered denominations so you can verify the calculation.
+
+### 4. Export to PDF
+
+You can generate a **PDF summary** of the cash count using the export option available in the summary section.
+
+This allows you to save or share the result of the calculation.
+
+### 5. Reset the counter
+
+If you want to start a new calculation, use the **Reset** option.
+
+A **confirmation modal** will appear before clearing all values.
+
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 <br>
