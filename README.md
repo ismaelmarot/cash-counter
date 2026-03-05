@@ -414,7 +414,7 @@ npm run test:watch
 <p align="center">
   <img src="src/screenshots/mobile_v110_01.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="src/screenshots/smobile_v110_02.png" width="250"/>
+  <img src="src/screenshots/mobile_v110_02.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
   <img src="src/screenshots/mobile_v110_03.png" width="250"/>
 </p>
@@ -436,8 +436,8 @@ npm run test:watch
 
 <br>
 
-<br>
 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
