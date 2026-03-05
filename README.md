@@ -273,73 +273,76 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
 
 ```planindex
     CASH COUNTER
-    src/
-      ├── App.tsx                  # Root component
-      ├── main.tsx                 # ReactDOM entry
-      ├── pages/
-      │   └── Counter/
-      │   ├── Counter.tsx          # Main screen logic
-      │   └── Counter.styles.ts    # Layout and styled components
-      ├── components/
-      │   ├── Display/             # Large numeric display
-      │   ├── Keypad/              # Numeric keypad container
-      │   ├── Key/                 # Individual key button
-      │   └── index.ts             # Barrel export
-      ├── hooks/
-      │   └── useCounter.ts        # Counter state and logic
-      ├── constants/
-      │   └── colors.ts            # UI color system
-      ├── styles/
-      │   └── GlobalStyles.ts      # Global CSS reset and base styles
-      ├── assets/
-      │   └── icons/               # App icons and images
-      └── types/
-          └── index.ts             # TypeScript definitions
+    src
+    ├─ components/
+    │  ├─ BillInput/
+    │  ├─ Footer/
+    │  ├─ LegalModal/
+    │  ├─ NumberPicker/
+    │  ├─ ResetModal/
+    │  ├─ SummaryCard/
+    │  ├─ TermsModal/
+    │  └─ Total/
+    │
+    ├─ hooks/
+    │  └─ useCashCounter
+    │
+    ├─ helpers/
+    │
+    ├─ mixins/
+    │
+    ├─ types/
+    │
+    ├─ interface/
+    │
+    ├─ App.tsx
+    └─ main.tsx 
 ```
 
 
+<br>
 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="key-module-relationships"></a>
+## 📂 [KEY MODULE RELATIONSHIPS](#-table-of-content)
 
-
-
-
-
-
-XXX
-
-
-
-```plaintex
-  CASH COUNTER
-  src/
-  ├── App.tsx                     # Root component
-  ├── main.tsx                    # ReactDOM entry
-  ├── pages/
-  │   └── Counter/
-  │       ├── Counter.tsx         # Main screen logic
-  │       └── Counter.styles.ts   # Layout and styled components
-  ├── components/
-  │   ├── Display/                # Large numeric display
-  │   ├── Keypad/                 # Numeric keypad container
-  │   ├── Key/                    # Individual key button
-  │   └── index.ts                # Barrel export
-  ├── hooks/
-  │   └── useCounter.ts           # Counter state and logic
-  ├── constants/
-  │   └── colors.ts               # UI color system
-  ├── styles/
-  │   └── GlobalStyles.ts         # Global CSS reset and base styles
-  ├── assets/
-  │   └── icons/                  # App icons and images
-  └── types/
-      └── index.ts                # TypeScript definitions
+```mermaid
+   flowchart TD
+    A["main.tsx"] --> B["App.tsx"]
+    
+    B --> C["hooks/useCashCounter"]
+    
+    B --> D["components/BillInput"]
+    D --> E["components/NumberPicker"]
+    
+    B --> F["components/SummaryCard"]
+    F --> G["helpers/pdfExport"]
+    
+    B --> H["components/Total"]
+    
+    B --> I["components/ResetModal"]
+    
+    B --> J["components/Footer"]
+    
+    C --> K["types / interface"]
 ```
 
-
-
-XXX
-
+> ## sources:
+> ![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+> ![useCashCounter](https://img.shields.io/badge/src%2FApp.tsx-1--29-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+> ![BillInput](https://img.shields.io/badge/src%2FApp.tsx-1--46-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+> ![NumberPicker](https://img.shields.io/badge/src%2FApp.tsx-1--76-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+> ![SummaryCard](https://img.shields.io/badge/src%2FApp.tsx-1--86-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+> ![Total](https://img.shields.io/badge/src%2FApp.tsx-1--28-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+> > ![ResetMOdal](https://img.shields.io/badge/src%2FApp.tsx-1--39-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
 
 
 <br>
