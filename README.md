@@ -412,11 +412,11 @@ npm run test:watch
 **v1.1.0**
 
 <p align="center">
-  <img src="rc/screenshots/screenshot[v1.1.0]_01.png" width="250"/>
+  <img src="src/screenshots/screenshot[v1.1.0]_01.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="rc/screenshots/screenshot[v1.1.0]_02.png" width="250"/>
+  <img src="src/screenshots/screenshot[v1.1.0]_02.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="rc/screenshots/screenshot[v1.1.0]_03.png" width="250"/>
+  <img src="src/screenshots/screenshot[v1.1.0]_03.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
 </p>
 <details>
@@ -426,9 +426,9 @@ npm run test:watch
   
   <br>
   <p align="center">
-    <img src="rc/screenshots/screenshot[v1.0.0]_02.png" width="250"/>
+    <img src="src/screenshots/screenshot[v1.0.0]_02.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="rc/screenshots/screenshot[v1.0.0]_03.png" width="250"/>
+  <img src="src/screenshots/screenshot[v1.0.0]_03.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
   </p>
 </details>
