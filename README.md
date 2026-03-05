@@ -412,26 +412,29 @@ npm run test:watch
 **v1.1.0**
 
 <p align="center">
-  <img src="src/screenshots/screenshot[v1.1.0]_01.png" width="250"/>
+  <img src="src/screenshots/mobile_v110_01.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="src/screenshots/screenshot[v1.1.0]_02.png" width="250"/>
+  <img src="src/screenshots/smobile_v110_02.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="src/screenshots/screenshot[v1.1.0]_03.png" width="250"/>
-  &nbsp;&nbsp;&nbsp;
+  <img src="src/screenshots/mobile_v110_03.png" width="250"/>
 </p>
+
 <details>
   <summary><strong>See more...</strong></summary>
-  
-   **v1.0.0**
-  
-  <br>
-  <p align="center">
-    <img src="src/screenshots/screenshot[v1.0.0]_02.png" width="250"/>
+
+<br>
+
+**v1.0.0**
+
+<p align="center">
+  <img src="src/screenshots/mobile_v100_01.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="src/screenshots/screenshot[v1.0.0]_03.png" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  </p>
+  <img src="src/screenshots/mobile_v100_02.png" width="250"/>
+</p>
+
 </details>
+
+<br>
 
 <br>
 
