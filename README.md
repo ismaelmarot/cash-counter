@@ -185,6 +185,61 @@ flowchart TD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="installation"></a>
+## 🚀 [INSTALLATION](#-table-of-content)
+
+1. **Clone the repository**:
+   ```bash
+     git clone https://github.com/ismaelmarot/WeatherApp.git
+     cd WeatherApp
+   ```
+
+2. Install dependencies
+  ```bash
+    This project uses npm.
+    npm install
+  ```
+
+- Make sure you have Node.js ≥ 18 installed.
+
+You can verify your version with:
+   ```bash
+    node -v
+  ```
+
+3. Run the development server
+  ```bash
+    npm run dev
+  ```
+
+  This will start the application locally using Vite.
+  By default the app will run at:
+
+  ```bash
+    http://localhost:5173
+  ```
+  Open this URL in your browser to start using CashCounter.
+
+🛠 Troubleshooting
+
+  If you encounter dependency or build issues, try reinstalling the packages:
+  ```bash
+    rm -rf node_modules package-lock.json
+    npm install
+  ```
+Then run the development server again:
+  ```bash
+    npm run dev
+  ```
+
+
+💡 **Tip de README (muy usado en proyectos pro):**
+
+Después de **INSTALLATION**, conviene agregar esta sección:
+
+
+
+
 
 
 <br>
