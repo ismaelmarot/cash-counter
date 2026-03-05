@@ -175,9 +175,9 @@ The application is structured as a Progressive Web App (PWA), built with **React
 ```
 
 > ## sources:
-> ![README.md](https://img.shields.io/badge/src%2FApp.tsx-1--48-gray?labelColor=black&style=for-the-badge)
+  [![App.tsx](https://img.shields.io/badge/src%2FApp.tsx-1--48-gray?labelColor=black&style=for-the-badge)](src/App.tsx)
   &nbsp;
-  ![package.json](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-17--24-gray?labelColor=black&style=for-the-badge)
+  [package.json](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-17--24-gray?labelColor=black&style=for-the-badge)
 
 
 <br>
