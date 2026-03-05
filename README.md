@@ -58,13 +58,14 @@ The application is structured as a Progressive Web App (PWA), built with **React
 2. [Technologies Stack](#technologies)
 3. [Codebase Layer Map](#codebaser-layer-map)
 4. [Installation](#installation)
-5. [Project Structure](#project-structure)
-6. [Key Module Relationships](#key-module-relationships)
-7. [Usage](#usage)
-8. [Testing](#testing)
-9. [Version](#version)
-10. [Screenshots](#screenshots)
-11. [Live Demo](#live-demo)
+5. [usage](#usage)
+6. [Project Structure](#project-structure)
+7. [Key Module Relationships](#key-module-relationships)
+8. [Usage](#usage)
+9. [Testing](#testing)
+10. [Version](#version)
+11. [Screenshots](#screenshots)
+12. [Live Demo](#live-demo)
 
 <br>
 
@@ -238,38 +239,28 @@ Then run the development server again:
 
 
 <a id="usage"></a>
-
-## ▶️ USAGE
+## ▶️ [USAGE](#-table-of-content)
 
 CashCounter allows you to quickly calculate the total amount of cash based on the number of bills entered for each denomination.
 
 ### 1. Enter bill quantities
-
-Use the **BillInput** fields to enter how many bills you have for each denomination.
-
-The **NumberPicker** helps you increase or decrease the amount quickly without typing.
+  > Use the **BillInput** fields to enter how many bills you have for each denomination.<br>
+  > The **NumberPicker** helps you increase or decrease the amount quickly without typing.
 
 ### 2. View the total instantly
-
-As you update the quantities, the application automatically calculates the **total amount of cash** in real time.
-
-The result is displayed in the **Total** component.
+  > As you update the quantities, the application automatically calculates the **total amount of cash** in real time.<br>
+  > The result is displayed in the **Total** component.
 
 ### 3. Review the summary
-
-The **SummaryCard** shows a breakdown of the entered denominations so you can verify the calculation.
+  > The **SummaryCard** shows a breakdown of the entered denominations so you can verify the calculation.
 
 ### 4. Export to PDF
-
-You can generate a **PDF summary** of the cash count using the export option available in the summary section.
-
-This allows you to save or share the result of the calculation.
+  > You can generate a **PDF summary** of the cash count using the export option available in the summary section.<br>
+  > This allows you to save or share the result of the calculation.
 
 ### 5. Reset the counter
-
-If you want to start a new calculation, use the **Reset** option.
-
-A **confirmation modal** will appear before clearing all values.
+  > If you want to start a new calculation, use the **Reset** option.<br>
+  > A **confirmation modal** will appear before clearing all values.
 
 
 <br>
