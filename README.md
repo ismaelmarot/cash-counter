@@ -68,6 +68,90 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="highlights"></a>
+## 🌟 [HIGHLIGHTS](#-table-of-content)
+
+  - Real-time cash total calculation based on bill denominations
+  - Minimal and intuitive UI for fast counting workflows
+  - Reset functionality for quick session restart
+  - Responsive layout optimized for mobile and desktop devices
+  - PDF export capability using jsPDF
+  - Fully typed with TypeScript for safer and maintainable code
+  - Unit-tested with Vitest for core logic validation
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a id="technologies"></a>
+## 🛠️ [TECHNOLOGIES STACK](#-table-of-content)
+ 
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Category</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Library / Tool</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Version</th>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">UI framework</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">React</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^19</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Language</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">TypeScript</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^5</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Build tool</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Vite + @vitejs/plugin-react</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^7</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Icons</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">react-icons</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^5</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">State management</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">React Hooks</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Built-in</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Styling</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">CSS</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Native</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Testing</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Vitest</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^4</td>
+  </tr>
+
+</table>
+
+- **Other:** Real-time calculations, responsive layout, reusable components, TypeScript type safety
+
+> [!IMPORTANT]
+> <sub>_Make sure dependencies are installed and the development server is running before using the application._</sub>
+
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <a id="version"></a>
 ## [Version](#-table-of-content)
@@ -89,7 +173,7 @@ _Cash Counter_ is a **web application for counting bills** and calculating total
 
 <br>
 
-## 🌟 Version 1.1.0 Highlights
+## 🌟 Version 1.1.0
 
 - ✅ Added **Reset Button** to clear all bill counts instantly  
 - ✅ Improved **quantity selection** UX – now faster and easier to input denominations  
