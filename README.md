@@ -329,21 +329,20 @@ CashCounter allows you to quickly calculate the total amount of cash based on th
 ```
 
 > ## sources:
-> ![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-> ![useCashCounter](https://img.shields.io/badge/src%2FApp.tsx-1--29-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-> ![BillInput](https://img.shields.io/badge/src%2FApp.tsx-1--46-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-> ![NumberPicker](https://img.shields.io/badge/src%2FApp.tsx-1--76-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-> ![SummaryCard](https://img.shields.io/badge/src%2FApp.tsx-1--86-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-> ![Total](https://img.shields.io/badge/src%2FApp.tsx-1--28-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-> ![ResetMOdal](https://img.shields.io/badge/src%2FApp.tsx-1--39-gray?labelColor=black&style=for-the-badge)
-  &nbsp;
-
+[![src/main.tsx](https://img.shields.io/badge/src%2Fmain.tsx-1--12-gray?labelColor=black&style=for-the-badge)](src/main.tsx)
+&nbsp;
+[![src/App.tsx](https://img.shields.io/badge/src%2FApp.tsx-1--83-gray?labelColor=black&style=for-the-badge)](src/App.tsx)
+&nbsp;
+[![hooks/useCashCounter](https://img.shields.io/badge/hooks%2FuseCashCounter-1--29-gray?labelColor=black&style=for-the-badge)](src/hooks/useCashCounter.ts)
+&nbsp;
+[![components/BillInput](https://img.shields.io/badge/components%2FBillInput-1--46-gray?labelColor=black&style=for-the-badge)](src/components/BillInput)
+&nbsp;
+[![components/NumberPicker](https://img.shields.io/badge/components%2FNumberPicker-1--76-gray?labelColor=black&style=for-the-badge)](src/components/NumberPicker)
+&nbsp;
+[![components/SummaryCard](https://img.shields.io/badge/components%2FSummaryCard-1--86-gray?labelColor=black&style=for-the-badge)](src/components/SummaryCard)
+&nbsp;
+[![components/ResetModal](https://img.shields.io/badge/components%2FResetModal-1--39-gray?labelColor=black&style=for-the-badge)](src/components/ResetModal)tyle=for-the-badge)](src/types)
+&nbsp;
 
 <br>
 <br>
