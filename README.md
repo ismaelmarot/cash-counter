@@ -409,26 +409,26 @@ npm run test:watch
 
 >### 📱 Mobile
 
+*v1.1.0*
 <p align="center">
-  <img src="src/screenshots/screenshot01.png" width="250"/>
+  <img src="" width="250"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="src/screenshots/screenshot02.png" width="250"/>
+  <img src="" width="250"/>
 </p>
-
 <details>
-<summary><strong>See more...</strong></summary>
-<br>
-<p align="center">
-  <img src="" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="" width="250"/>
-</p>
-<p align="center">
-  <img src="" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="" width="250"/>
-
-</p>
+  <summary><strong>See more...</strong></summary>
+  <br>
+    *v1.0.0*
+  <p align="center">
+    <img src="src/screenshots/screenshot01.png" width="250"/>
+    &nbsp;&nbsp;&nbsp;
+    <img src="src/screenshots/screenshot02.png" width="250"/>
+  </p>
+  <p align="center">
+    <img src="" width="250"/>
+    &nbsp;&nbsp;&nbsp;
+    <img src="" width="250"/>
+  </p>
 </details>
 
 <br>
