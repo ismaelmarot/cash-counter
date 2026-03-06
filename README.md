@@ -488,24 +488,30 @@ npm run test:watch
     <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Date</th>
     <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Changes</th>
   </tr>
-
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">1.1.0</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">04/03/2026</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">
+      Added _Reset Button_ to clear all bill counts instantly <br>
+      Improved **quantity selection** UX – now faster and easier to input denominations <br> 
+      Performance and UI refinements for smoother experience
+    </td>
+  </tr>
   <tr>
     <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">213/09/2025</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Cash count</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">13/09/2025</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">
+      Initial release of Cash Counter <br>
+      Real-time cash counting by denomination <br>
+      Subtotals and automatic total calculation
+    </td>
   </tr>
 </table>
 
-
 <br>
 
-## 🌟 Version 1.1.0
 
-- ✅ Added **Reset Button** to clear all bill counts instantly  
-- ✅ Improved **quantity selection** UX – now faster and easier to input denominations  
-- 💡 Performance and UI refinements for smoother experience  
-
----
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Demo
 
