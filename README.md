@@ -56,17 +56,18 @@ The application is structured as a Progressive Web App (PWA), built with **React
 ## 📑 [TABLE OF CONTENT](#-table-of-content)
 
 1. [Highlights](#highlights)
-2. [Technologies Stack](#technologies)
-3. [Codebase Layer Map](#codebaser-layer-map)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Key Module Relationships](#key-module-relationships)
-8. [Usage](#usage)
-9. [Testing](#testing)
-10. [Version](#version)
-11. [Screenshots](#screenshots)
-12. [Live Demo](#live-demo)
+2. [Core Feature](#core-feature)
+3. [Technologies Stack](#technologies)
+4. [Codebase Layer Map](#codebaser-layer-map)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Project Structure](#project-structure)
+8. [Key Module Relationships](#key-module-relationships)
+9. [Usage](#usage)
+10. [Testing](#testing)
+11. [Version](#version)
+12. [Screenshots](#screenshots)
+13. [Live Demo](#live-demo)
 
 <br>
 
@@ -83,6 +84,25 @@ The application is structured as a Progressive Web App (PWA), built with **React
   - PDF export capability using jsPDF
   - Fully typed with TypeScript for safer and maintainable code
   - Unit-tested with Vitest for core logic validation
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a id="core-features"></a>
+
+## ✨ [CORE-FEATURE](#-table-of-content)
+
+| Feature | Description |
+|-------|-------------|
+| **Denomination input** | Each supported denomination (from **20000 down to 0.10**) has a dedicated input card |
+| **Custom numeric keypad** | Quantity entry uses an **in-app modal keypad (NumberPicker)** — no native keyboard required |
+| **Real-time subtotals** | Each card shows **denomination × quantity**; the grand total updates automatically |
+| **Argentine locale formatting** | Currency values are formatted using **`es-AR` locale** (e.g. `$ 1.234,50`) |
+| **PDF export** | **SummaryCard** generates and downloads a **PDF summary** using **jsPDF** |
+| **Reset** | A confirmation modal (**ResetModal**) clears all quantities via `window.location.reload` |
+| **PWA** | Manifest and icons in `public/` allow installation on **mobile and desktop browsers** |
+| **Responsive layout** | **Horizontal scroll carousel with snap layout** adapts to mobile, tablet, and desktop |
 
 <br>
 
