@@ -481,10 +481,11 @@ npm run test:watch
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Demo
+<a id="live-demo"></a>
+## 🌍 [Live Demo](#-table-of-content)
 
-Try the live app here:  
-[https://ismaelmarot.github.io/cash-counter](https://ismaelmarot.github.io/cash-counter)
+Try the live app here:
+  👉 [https://ismaelmarot.github.io/cash-counter](https://ismaelmarot.github.io/cash-counter)
 
 ---
 
