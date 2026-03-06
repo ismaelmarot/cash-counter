@@ -489,41 +489,6 @@ Try the live app here:
 
 ---
 
-## Features
-
-- Count bills by denomination  
-- Automatic calculation of the total amount  
-- Reset all data with a single click  
-- Improved quantity selection UI  
-- Simple and responsive design  
-- Unit tests with **Vitest**  
-- Easy deployment to **GitHub Pages**  
-
----
-
-## 🛠 Technologies Stack
-
-![React](https://img.shields.io/badge/React-18-blue?logo=react) 
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript) 
-![Vite](https://img.shields.io/badge/Vite-7.1.2-blue?logo=vite) 
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap) 
-![Styled Components](https://img.shields.io/badge/Styled%20Components-6.3.8-pink?logo=styled-components) 
-![Vitest](https://img.shields.io/badge/Vitest-4.0.18-brightgreen) 
-![jsPDF](https://img.shields.io/badge/jsPDF-2.5-red)
-
-| Category       | Library / Tool     | Version / Notes |
-|----------------|-----------------|----------------|
-| Frontend       | React           | 18              |
-| Language       | TypeScript      | 5.x             |
-| Bundler        | Vite            | 7.1.2           |
-| UI Components  | Bootstrap       | 5.x             |
-| Styling        | Styled Components | 6.x           |
-| Testing        | Vitest + RTL    | 4.x / 16.x      |
-| Export/Print   | jsPDF           | 2.x             |
-| Hosting        | GitHub Pages    | -               |
-
-> [!IMPORTANT]
-> <sub>_Please choose the appropriate Node.js environment and install dependencies carefully._</sub>
 
 ---
 
