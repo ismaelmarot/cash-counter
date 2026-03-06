@@ -447,6 +447,17 @@ npm run test:watch
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="live-demo"></a>
+## 🌍 [Live Demo](#-table-of-content)
+
+Try the live app here:
+  👉 [https://ismaelmarot.github.io/cash-counter](https://ismaelmarot.github.io/cash-counter)
+
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
 <a id="version"></a>
 ## [Version](#-table-of-content)
 
@@ -481,28 +492,35 @@ npm run test:watch
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-<a id="live-demo"></a>
-## 🌍 [Live Demo](#-table-of-content)
-
-Try the live app here:
-  👉 [https://ismaelmarot.github.io/cash-counter](https://ismaelmarot.github.io/cash-counter)
-
----
+<a id="license"></a>
+## 📄 [License](#-table-of-content)
 
 
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🚀 Getting Started
+<br>
 
-### Prerequisites
+------------------------------------------------------------------------------------------------------------------------------------------------
 
-- Node.js >= 18.12  
-- npm or yarn  
+## 📬 Contact
 
-### Installation
+<p align="center">
+  <a href="https://ismaelmarot.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/ismael-marot" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
 
-```bash
-git clone https://github.com/ismaelmarot/cash-counter.git
-cd cash-counter
-npm install
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p align="center">
+  <a href="#-table-of-content">
+    <img src="https://img.shields.io/badge/Back%20-0A66C2?style=for-the-badge&logo=vercel&logoColor=white"/>
+  </a>
+</p>
+
+<br>
 
