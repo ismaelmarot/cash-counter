@@ -277,6 +277,24 @@ Then run the development server again:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="usage"></a>
+## ⚙️ [USAGE](#-table-of-content)
+
+| Step | Description |
+|-----|-----|
+| 1 | Open the Cash Counter application in your browser. |
+| 2 | Select the denomination you want to count. |
+| 3 | Tap the input field to open the numeric keypad. |
+| 4 | Enter the quantity of bills or coins. |
+| 5 | The subtotal for that denomination updates automatically. |
+| 6 | Repeat the process for other denominations. |
+| 7 | The **Grand Total** updates in real time as values change. |
+| 8 | Use **Reset** to clear all values and start a new count. |
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
 <a id="project-structure"></a>
 
 ## 📂 [PROJECT STRUCTURE](#-table-of-content)
