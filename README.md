@@ -472,8 +472,8 @@ npm run test:watch
     <td style="border-bottom: 1px solid #eee; padding:8px;">1.1.0</td>
     <td style="border-bottom: 1px solid #eee; padding:8px;">04/03/2026</td>
     <td style="border-bottom: 1px solid #eee; padding:8px;">
-      Added _Reset Button_ to clear all bill counts instantly <br>
-      Improved **quantity selection** UX – now faster and easier to input denominations <br> 
+      Added Reset Button to clear all bill counts instantly <br>
+      Improved quantity selection** UX – now faster and easier to input denominations <br> 
       Performance and UI refinements for smoother experience
     </td>
   </tr>
