@@ -253,6 +253,27 @@ Then run the development server again:
 
 <br>
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a id="implement"></a>
+## ▶️ [IMPLEMENT](#-table-of-content)
+
+*After installing dependencies and setting, you can use the app as follows:*
+
+### Run the App
+
+*1. In your terminal:*
+
+  ```bash
+      npm run dev
+  ```
+
+*2. Then open your browser at the localhost you are using:*
+
+  [Open the app](http://localhost:5173)
+
+
+<br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -332,28 +353,6 @@ Then run the development server again:
 [![components/SummaryCard](https://img.shields.io/badge/components%2FSummaryCard-1--86-gray?labelColor=black&style=for-the-badge)](src/components/SummaryCard)
 &nbsp;
 [![components/ResetModal](https://img.shields.io/badge/components%2FResetModal-1--39-gray?labelColor=black&style=for-the-badge)](src/components/ResetModal)
-
-
-<br>
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-
-<a id="implement"></a>
-## ▶️ [IMPLEMENT](#-table-of-content)
-
-*After installing dependencies and setting, you can use the app as follows:*
-
-### Run the App
-
-*1. In your terminal:*
-
-  ```bash
-      npm run dev
-  ```
-
-*2. Then open your browser at the localhost you are using:*
-
-  [Open the app](http://localhost:5173)
 
 
 <br>
