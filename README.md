@@ -505,22 +505,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 <p align="center">
-  <a href="https://ismaelmarot.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/ismael-marot" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
+  Open to collaboration, feedback, and new opportunities.
 </p>
 
-------------------------------------------------------------------------------------------------------------------------------------------------
-
 <p align="center">
-  <a href="#-table-of-content">
-    <img src="https://img.shields.io/badge/Back%20-0A66C2?style=for-the-badge&logo=vercel&logoColor=white"/>
+  <a href="https://github.com/ismaelmarot">
+  <img src="https://img.shields.io/badge/GitHub-@ismaelmarot-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/ismael-marot">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://ismaelmarot.github.io">
+  <img src="https://img.shields.io/badge/Portfolio-View%20Projects-FF7A00?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
 </p>
 
 <br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a href="#-table-of-content">
+  <img src="https://img.shields.io/badge/Go%20Back-0A66C2?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
 
