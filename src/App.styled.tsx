@@ -7,6 +7,15 @@ export const AppContainer = styled.div`
   background-color: ${COLORS.white};
   position: relative;
   overflow: hidden;
+  max-width: 480px;
+  margin: 0 auto;
+  height: 100vh;
+  
+  @media (min-width: 481px) {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
 `
 
 export const TitleButtonContainer = styled.div`

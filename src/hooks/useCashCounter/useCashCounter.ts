@@ -14,6 +14,10 @@ export function useCashCounter() {
         })   
     }
 
+    const resetAll = () => {
+        setQuantities(DENOMINATIONS.map(() => 0))
+    }
+
     const total = useMemo(() => {
         return quantities.reduce(
             (acc, quantity, i) => acc + quantity * DENOMINATIONS[i],
@@ -24,6 +28,7 @@ export function useCashCounter() {
     return {
         quantities,
         updateQuantity,
+        resetAll,
         total
     }
 }

@@ -19,8 +19,12 @@ import {
   TitleButtonContainer,
 } from './App.styled'
 
-function App() {
-  const { quantities, updateQuantity, total } = useCashCounter()
+interface AppProps {
+  onReset: () => void
+}
+
+function App({ onReset }: AppProps) {
+  const { quantities, updateQuantity, total, resetAll } = useCashCounter()
   const [showResetModal, setShowResetModal] = useState(false)
 
   const containerRef = useRef<HTMLDivElement>(null)
@@ -33,6 +37,12 @@ function App() {
         behavior: 'smooth',
       })
     }
+  }
+
+  const handleReset = () => {
+    resetAll()
+    setShowResetModal(false)
+    onReset()
   }
 
   return (
@@ -74,7 +84,7 @@ function App() {
       <ResetModal
         open={showResetModal}
         onClose={() => setShowResetModal(false)}
-        onConfirm={() => window.location.reload()}
+        onConfirm={handleReset}
       />
     </AppContainer>
   )

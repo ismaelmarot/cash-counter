@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface SplashScreenProps {
   onComplete: () => void
@@ -9,6 +9,7 @@ const DESCRIPTION = 'Count your banknotes and coins quickly and accurately.'
 const APP_VERSION = 'v1.1.0 Stable'
 
 export function SplashScreen({ onComplete }: SplashScreenProps) {
+  const [clicked, setClicked] = useState(false)
   const hasCompleted = useRef(false)
 
   useEffect(() => {
@@ -20,22 +21,21 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
     const timer = setTimeout(() => {
       console.log('SplashScreen timeout reached')
       onComplete()
-    }, 4000)
+    }, 10000)
 
     return () => clearTimeout(timer)
   }, [onComplete])
 
-  const skipSplash = () => {
-    console.log('SplashScreen skip clicked')
-    if (!hasCompleted.current) {
-      hasCompleted.current = true
+  const handleClick = () => {
+    console.log('handleClick called, clicked:', clicked)
+    if (!clicked) {
+      setClicked(true)
       onComplete()
     }
   }
 
   return (
-    <div 
-      onClick={skipSplash}
+    <div
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -43,15 +43,14 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         justifyContent: 'center',
         height: '100vh',
         width: '100vw',
+        maxWidth: '480px',
+        margin: '0 auto',
         background: '#1a1a2e',
         color: '#ffffff',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        zIndex: 9999,
-        animation: 'fadeIn 0.5s ease',
+        cursor: 'pointer',
       }}
+      onClick={handleClick}
     >
       <style>
         {`
@@ -72,10 +71,6 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
           }
-          @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-          }
         `}
       </style>
       
@@ -90,18 +85,16 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
           marginBottom: '24px',
           animation: 'scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
         }}
+        onClick={handleClick}
+        onLoad={() => console.log('Image loaded')}
       />
       
       <h1 style={{
         fontSize: '36px',
-        fontWeight: '800',
+        fontWeight: 'bold',
         margin: '0 0 12px 0',
-        background: 'linear-gradient(90deg, #ffd700 0%, #ffaa00 50%, #ffd700 100%)',
-        backgroundSize: '200% 100%',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text',
-        animation: 'slideUp 0.8s ease 0.2s both, shimmer 3s ease-in-out infinite',
+        color: '#ffd700',
+        animation: 'slideUp 0.8s ease 0.2s both',
       }}>
         {APP_NAME}
       </h1>
@@ -129,8 +122,8 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
           <div
             key={delay}
             style={{
-              width: '8px',
-              height: '8px',
+              width: '12px',
+              height: '12px',
               borderRadius: '50%',
               background: '#ffd700',
               opacity: 0.6,
@@ -141,9 +134,17 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         ))}
       </div>
 
+      <p style={{
+        marginTop: '60px',
+        fontSize: '16px',
+        color: '#ffd700',
+        animation: 'fadeIn 1s ease 2s both',
+      }}>
+        TAP TO CONTINUE
+      </p>
+
       <span style={{
         fontSize: '13px',
-        fontWeight: '500',
         color: '#888',
         position: 'absolute',
         bottom: '60px',
@@ -153,7 +154,6 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
       
       <span style={{
         fontSize: '12px',
-        fontWeight: '400',
         color: '#666',
         position: 'absolute',
         bottom: '40px',
