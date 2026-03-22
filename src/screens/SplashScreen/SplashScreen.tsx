@@ -27,7 +27,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
 
     const timer = setTimeout(() => {
       onComplete()
-    }, 3000)
+    }, 4000)
 
     return () => clearTimeout(timer)
   }, [onComplete])
@@ -42,7 +42,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
   return (
     <Container onClick={skipSplash}>
       <AppIcon 
-        src="/icons/icon_cap.png" 
+        src="/cash-counter/icons/icon_cap.png" 
         alt="Cash Counter Logo" 
       />
       <AppName>{APP_NAME}</AppName>
