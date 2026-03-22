@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App'
-import { SplashScreen } from './screens/SplashScreen'
+import { SplashScreen } from './screens/SplashScreen/SplashScreen'
 
 function Root() {
   const [showApp, setShowApp] = useState(false)
