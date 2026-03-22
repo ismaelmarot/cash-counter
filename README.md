@@ -420,11 +420,11 @@ npm run test:watch
 **v1.1.0**
 
 <p align="center">
+  <img src="src/screenshots/mobile_v110_00.png" width="250"/>
+  &nbsp;&nbsp;&nbsp;
   <img src="src/screenshots/mobile_v110_01.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
   <img src="src/screenshots/mobile_v110_02.png" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="src/screenshots/mobile_v110_03.png" width="250"/>
 </p>
 
 <details>
@@ -435,6 +435,8 @@ npm run test:watch
 **v1.0.0**
 
 <p align="center">
+  <img src="src/screenshots/mobile_v110_03.png" width="250"/>
+  &nbsp;&nbsp;&nbsp;
   <img src="src/screenshots/mobile_v100_01.png" width="250"/>
   &nbsp;&nbsp;&nbsp;
   <img src="src/screenshots/mobile_v100_02.png" width="250"/>
