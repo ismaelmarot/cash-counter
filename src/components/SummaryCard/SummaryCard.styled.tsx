@@ -54,7 +54,7 @@ export const NumberStyled = styled.div`
 `
 
 export const ButtonStyled = styled.button`
-    border-radius: 5px;
+    border-radius: 35px;
     padding: .5rem 1rem;
     color: ${COLORS.black};
     background-color: ${COLORS.green};
