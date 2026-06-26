@@ -1,35 +1,55 @@
 /// <reference types="vitest" />
-import { render, screen, fireEvent } from '@testing-library/react';
-import BillInput from './BillInput';
-import { describe, it, vi, expect } from 'vitest';
+
+import { render, screen, fireEvent } from '@testing-library/react'
+import { describe, it, vi, expect } from 'vitest'
+import { BillInput } from './BillInput'
 
 describe('BillInput Component', () => {
   it('renders the denomination and "x"', () => {
-    render(<BillInput denomination={20000} quantity="" onChange={() => {}} />);
+    render(
+      <BillInput
+        denomination={20000}
+        quantity={0}
+        onChange={() => {}}
+      />
+    )
 
-    const denominationSpan = screen.getByText((content) =>
-      content.replace(/\s|,/g, '').includes('20000')
-    );
-    expect(denominationSpan).toBeInTheDocument();
+    expect(screen.getByText('x')).toBeInTheDocument()
+    expect(screen.getByText('20.000')).toBeInTheDocument()
+  })
 
-    const xSpan = screen.getByText('x');
-    expect(xSpan).toBeInTheDocument();
-  });
+  it('calls onChange when selecting a value', () => {
+    const handleChange = vi.fn()
 
-  it('calls onChange when typing in the input', () => {
-    const handleChange = vi.fn();
-    render(<BillInput denomination={20000} quantity="" onChange={handleChange} />);
+    render(
+      <BillInput
+        denomination={20000}
+        quantity={0}
+        onChange={handleChange}
+      />
+    )
 
-    const input = screen.getByRole('spinbutton');
-    fireEvent.change(input, { target: { value: '3' } });
+    // Abrir el NumberPicker
+    fireEvent.click(screen.getByText('0'))
 
-    expect(handleChange).toHaveBeenCalledWith('3');
-  });
+    // Elegir el número 3
+    fireEvent.click(screen.getByRole('button', { name: '3' }))
 
-  it('displays the initial quantity', () => {
-    render(<BillInput denomination={20000} quantity="5" onChange={() => {}} />);
+    // Confirmar
+    fireEvent.click(screen.getByRole('button', { name: 'OK' }))
 
-    const input = screen.getByRole('spinbutton') as HTMLInputElement;
-    expect(input.value).toBe('5');
-  });
-});
+    expect(handleChange).toHaveBeenCalledWith(3)
+  })
+
+  it('shows the initial quantity', () => {
+    render(
+      <BillInput
+        denomination={20000}
+        quantity={5}
+        onChange={() => {}}
+      />
+    )
+
+    expect(screen.getByText('5')).toBeInTheDocument()
+  })
+})
