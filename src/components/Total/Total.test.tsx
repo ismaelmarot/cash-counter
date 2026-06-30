@@ -1,40 +1,34 @@
 /// <reference types="vitest" />
+
 import { render, screen } from '@testing-library/react'
-import { Total } from './Total'
 import { describe, it, expect } from 'vitest'
+import { Total } from './Total'
 
 describe('Total Component', () => {
-    it('renders the Total label', () => {
-        render(<Total quantities={[]} denominations={[]} />)
-        const totalLabel = screen.getByText(/Total/)
-        expect(totalLabel).toBeInTheDocument()
-    })
+  it('renders the Total label', () => {
+    render(<Total total={0} />)
 
-    it('calculates and displays the correct total', () => {
-        const quantities = ['2', '1', '5']
-        const denominations = [20000, 10000, 2000]
+    expect(screen.getByText(/Total/i)).toBeInTheDocument()
+  })
 
-        render(<Total quantities={quantities} denominations={denominations} />)
+  it('displays the formatted total', () => {
+    render(<Total total={60000} />)
 
-        const totalSpan = screen.getByText((content) => {
-        const cleaned = content.replace(/\./g, '').replace(',', '.')
-        return cleaned.includes('60000')
-        })
+    expect(screen.getByText('60.000')).toBeInTheDocument()
+    expect(screen.getByText(',00')).toBeInTheDocument()
+  })
 
-        expect(totalSpan).toBeInTheDocument()
-    })
+  it('renders zero correctly', () => {
+    render(<Total total={0} />)
 
-    it('handles empty or invalid quantities gracefully', () => {
-        const quantities = ['', 'abc', undefined as any]
-        const denominations = [20000, 10000, 2000]
+    expect(screen.getByText('0')).toBeInTheDocument()
+    expect(screen.getByText(',00')).toBeInTheDocument()
+  })
 
-        render(<Total quantities={quantities} denominations={denominations} />)
+  it('renders decimal values correctly', () => {
+    render(<Total total={1234.5} />)
 
-        const totalSpan = screen.getByText((content) => {
-        const cleaned = content.replace(/\./g, '').replace(',', '.')
-        return cleaned.includes('0')
-        })
-
-        expect(totalSpan).toBeInTheDocument()
-    })
+    expect(screen.getByText('1.234')).toBeInTheDocument()
+    expect(screen.getByText(',50')).toBeInTheDocument()
+  })
 })
